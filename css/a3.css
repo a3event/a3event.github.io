@@ -1,8 +1,15 @@
 body {
-  background-color: #333;
-  color: #CCC;
+  background-color: #111;
+  color: #DDD;
+  padding: 0.1em;
 }
 
 a {
   color: #9CF;
+}
+
+div {
+  background-color: #124;
+  color: #BBB;
+  padding: 0.1em;
 }
