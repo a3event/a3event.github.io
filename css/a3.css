@@ -8,7 +8,7 @@ a {
   color: #9CF;
 }
 
-div {
+div.box {
   background-color: #124;
   color: #BBB;
   padding: 0.1em;
