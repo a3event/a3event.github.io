@@ -1,3 +1,3 @@
-# A3!
+# [A3!] Act! Actors! Addict! : Fan Guide for EN Server
 
-Event guide, points calculator and gacha rates.
+Features an advanced event guide, points calculator, and F2P (ex. gem saving) tips.
