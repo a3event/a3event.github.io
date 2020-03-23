@@ -77,7 +77,7 @@ body {
 	}
 	
 	ul {
-		list-style-image: url('/gem.png');
+		list-style-image: url('https://a3event.github.io/gem.png');
 	}
 	ul li {
 		line-height: 18px;
