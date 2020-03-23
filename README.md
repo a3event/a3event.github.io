@@ -1,3 +1,5 @@
-# [A3!] Act! Actors! Addict! : Fan Guide for EN Server
+# [A3!] Act! Actors! Addict! : Advanced Fan Guide for EN Server
 
-Features an advanced event guide, points calculator, and F2P (ex. gem saving) tips.
+An in-depth event guide and some gem saving tips.
+
+WIP features: points calculator, possibly a gacha simulator.
