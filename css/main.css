@@ -77,7 +77,7 @@ h4 {
 }
 
 ul {
-	list-style-image: url("/src/gem.png");
+	list-style-image: url('/src/gem.png');
 }
 ul li {
 	line-height: 18px;
@@ -184,15 +184,15 @@ table.evt3 td {
 }
 
 .img_co {
-	background: #FB3 url("/src/comedy.png") 50%/20px no-repeat;
+	background: #FB3 url('/src/comedy.png') 50%/20px no-repeat;
 }
 
 .img_ac {
-	background: #F30 url("/src/action.png") 50%/20px no-repeat;
+	background: #F30 url('/src/action.png') 50%/20px no-repeat;
 }
 
 .img_dr {
-	background: #06F url("/src/drama.png") 50%/20px no-repeat;
+	background: #06F url('/src/drama.png') 50%/20px no-repeat;
 }
 
 select {
