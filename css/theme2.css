@@ -1,0 +1,124 @@
+body {
+	background-color: #FFF;
+	color: #111;
+}
+
+a {
+	color: #57E;
+}
+
+a:hover {
+	color: #BDF;
+}
+
+a:active {
+	color: #63F;
+}
+
+hr {
+	background-color: #F09;
+	border: 1px dotted #FAD;
+}
+
+img {
+	margin: 0 0 0 25px;
+	border: 1px outset #9BF;
+}
+
+h1, h2, h3, h4 {
+	text-shadow: 1px 1px 1px #CCC;
+}
+
+h2 {
+	border-bottom: 0.1em solid #E59;
+}
+
+h2::first-letter {
+	color: #224;
+}
+
+#header {
+	background-color: #FEE;
+}
+
+#menu {
+	background-color: #DDC;
+}
+
+#menu li {
+	background-color: #FBD;
+	border: 1px dotted #FEF;
+}
+
+#menu li:hover {
+	background-color:#F7D;
+}
+.inner {
+	background-color: #EEE;
+}
+
+div.box, div.box2 {
+	background-color: #DDE;
+	color: #111;
+}
+
+div.box2 {
+	background-color: #DCB;
+}
+
+span.text2 {
+	color: #679;
+}
+
+table.evt {
+	border: 2px solid #99D;
+}
+
+table.evt td {
+	border: 1px dotted #6AD;
+}
+
+table.evt4 {
+	color: #222;
+}
+
+.co, .ac, .dr {
+	color: #111;
+}
+
+.gray1 {
+	background-color: #CBB;
+}
+
+.gray2 {
+	background-color: #AAA;
+}
+
+.t1t2 {
+	background-color: #D4C;
+}
+
+.t3 {
+	background-color: #83F;
+}
+
+.t4t5 {
+	background-color: #48F;
+}
+
+.t6 {
+	background-color: #7C4;
+}
+
+.t7t8 {
+	background-color: #DB6;
+}
+
+select {
+	background-color: #EDD;
+    box-shadow: 2px 2px #963;
+}
+
+#footer {
+	background-color: #DDC;
+}

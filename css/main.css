@@ -1,0 +1,266 @@
+body {
+	font-size: 0.95em;
+	font-family: Tahoma;
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+p {
+	text-indent: 20px;
+	margin: 0 5px 0 5px;
+	line-height: 18px;
+}
+
+hr {
+	margin: 0;
+}
+
+img {
+	margin: 0 0 0 25px;
+	border: 1px outset #7AD;
+	max-height: 240px;
+	max-width: 500px;
+	display: block;
+}
+
+h1, h2, h3, h4 {
+	font-size: 1.15em;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	letter-spacing: 1px;
+	margin: 0 0 0.25em 0.25em;
+	padding: 0.2em 0.2em 0 0.2em;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+
+h1 {
+	line-height: 20px;
+}
+
+h2 {
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+
+h2::first-letter {
+	font-size: 150%;
+}
+
+h3, h4 {
+	color: #37D;
+	font-size: 0.95em;
+	text-decoration: underline;
+	text-transform: none;
+	white-space: normal;
+	display: inline-block;
+	line-height: 18px;
+}
+
+h4 {
+	color: #85B;
+	font-size: 0.85em;
+	text-indent: 20px;
+	margin: 0;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	height: 45px;
+	top: 0;
+	left: 0;
+}
+
+ul {
+	list-style-image: url('src/gem.png');
+}
+ul li {
+	line-height: 18px;
+}
+
+#menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+#menu li {
+	border-radius: 5px;
+	display: inline-block;
+	width: 110px;
+	height: 20px;
+	vertical-align: text-top;
+	text-align: center;
+}
+
+div.box, div.box2 {
+	padding: 0.1em;
+	margin: 0.5em;
+}
+
+div.box2 {
+	margin-bottom: 1em;
+}
+
+span.text2 {
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+table.evt {
+	border-collapse: separate;
+	border-spacing: 2px;
+	font-size: 0.9em;
+}
+
+table.evt td {
+	text-align: center;
+	vertical-align: text-top;
+	min-width: 80px;
+}
+
+table.evt2 {
+	float: right;
+	margin: 0.3em;
+}
+
+table.evt2 td {
+	width: 130px;
+}
+
+table.evt3 td {
+	min-width: 50px;
+}
+
+.rtxt {
+	color: #D40;
+}
+
+.ytxt {
+	color: #BA4;
+}
+
+.gtxt {
+	color: #0D4;
+}
+
+.co {
+	background-color: #FB3;
+}
+
+.ac {
+	background-color: #F30;
+}
+
+.dr {
+	background-color: #06F;
+}
+
+.trsp {
+	background-color: #F67;
+}
+
+.trsm {
+	background-color: #FA3;
+}
+
+.trat {
+	background-color: #F72;
+}
+
+.trwt {
+	background-color: #3AE;
+}
+
+.img_co, .img_ac, .img_dr {
+	height: 20px;
+}
+
+.img_co {
+	background: #FB3 url("src/comedy.png") 50%/20px no-repeat;
+}
+
+.img_ac {
+	background: #F30 url("src/action.png") 50%/20px no-repeat;
+}
+
+.img_dr {
+	background: #06F url("src/drama.png") 50%/20px no-repeat;
+}
+
+select {
+	background-color: #7AF;
+    box-shadow: 2px 2px #369;
+}
+
+#container {
+	height: 80vh;
+	overflow: hidden;
+	margin-top: 3.6em;
+	left: 0;
+}
+
+.inner {
+	height: 100%;
+	padding: 0em;
+	overflow: auto;
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	top: 2px;
+	visibility: hidden;
+}
+
+textarea {
+	background-color: #69A;
+	font-family: Arial;
+}
+
+#footer {
+	padding: 0.2em;
+	position: fixed;
+	height: 20px;
+	bottom: 0;
+	right: 0;
+}
+
+ul.inl {
+	display: inline-block;
+}
+
+input {
+	background-color: #BDF;
+}
+
+@media screen and (max-width: 465px){
+
+	body {
+		font-size: 0.9em;
+	}
+
+	h1 {
+		font-size: 1.1em;
+	}
+	
+	#container {
+		height: 75vh;
+		margin-top: 3.8em;
+	}
+	
+	#footer {
+		height: auto;
+	}
+	
+	ul.inl {
+		display: block;
+	}
+}
