@@ -1,0 +1,128 @@
+body {
+	background-color: #111;
+	color: #DDE;
+}
+
+a {
+	color: #7BF;
+}
+
+a:hover {
+	color: #BDF;
+}
+
+a:active {
+	color: #36F;
+}
+
+hr {
+	background-color: #B6B;
+	border: 1px dotted #904;
+}
+
+img {
+	margin: 0 0 0 25px;
+	border: 1px outset #7AD;
+}
+
+h1, h2, h3, h4 {
+	text-shadow: 1px 1px 2px #333;
+}
+
+h2 {
+	border-bottom: 0.1em solid #47A;
+}
+
+h2::first-letter {
+	color: #BBF;
+}
+
+#header {
+	background-color: #904;
+}
+
+#menu {
+	background-color: #503;
+}
+
+#menu li {
+	background-color: #614;
+	border: 1px dotted #FEF;
+}
+
+#menu li:hover {
+	background-color:#F5C;
+}
+
+.inner {
+	background-color: #235;
+}
+
+div.box, div.box2 {
+	background-color: #124;
+	color: #CCD;
+}
+
+div.box2 {
+	background-color: #112;
+}
+
+span.text2 {
+	color: #99B;
+}
+
+table.evt {
+	border: 2px solid #99D;
+}
+
+table.evt td {
+	border: 1px dotted #6AD;
+}
+
+table.evt4 {
+	color: #222;
+}
+
+.co, .ac, .dr {
+	color: #FFF;
+	text-shadow: 1px 1px 2px #333;
+}
+
+.gray1 {
+	background-color: #333;
+	text-shadow: 1px 1px 2px #999;
+}
+
+.gray2 {
+	background-color: #111;
+	color: #CCC;
+}
+
+.t1t2 {
+	background-color: #706;
+}
+
+.t3 {
+	background-color: #20A;
+}
+
+.t4t5 {
+	background-color: #06B;
+}
+
+.t6 {
+	background-color: #490;
+}
+
+.t7t8 {
+	background-color: #960;
+}
+
+select {
+	background-color: #7AF;
+    box-shadow: 2px 2px #369;
+}
+
+#footer {
+	background-color: #503;
+}
