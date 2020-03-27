@@ -1,5 +1,19 @@
 $( document ).ready(function() {
 	
+	if(localStorage.getItem('actor1')){
+		document.getElementById('actorSelect1').value = localStorage.actor1;
+	}
+	if(localStorage.getItem('actor2')){
+		document.getElementById('actorSelect2').value = localStorage.actor2;
+	}
+	
+	filterSkills();
+	
+	if(localStorage.getItem('userTheme')){
+		document.getElementById('themeSelect').value = localStorage.userTheme;
+		changeTheme(localStorage.userTheme);
+	}
+	
 });
 
 function filterSkills() {
@@ -26,16 +40,19 @@ function filterSkills() {
 			}
 		}
 	}
+	
+	localStorage.setItem("actor1", actor1);
+	localStorage.setItem("actor2", actor2);
 }
 
-function changeTheme() {
+function changeTheme(t) {
 	
-	var theme = document.getElementById("themeSelect").value;
-	
-	if (theme == "theme2") {
-		document.getElementById('theme_css').href = 'css/theme2.css';
+	if (t == "theme1") {
+		document.getElementById('theme_css').href = 'https://a3event.github.io/css/theme1.css';
 	}
 	else {
-		document.getElementById('theme_css').href = 'css/theme1.css';
+		document.getElementById('theme_css').href = 'https://a3event.github.io/css/theme2.css';
 	}
+	
+	localStorage.setItem("userTheme", t);
 }

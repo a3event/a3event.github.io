@@ -8,21 +8,16 @@ a {
 }
 
 a:hover {
-	color: #BDF;
+	color: #4AC;
 }
 
 a:active {
-	color: #63F;
+	color: #36F;
 }
 
 hr {
 	background-color: #F09;
 	border: 1px dotted #FAD;
-}
-
-img {
-	margin: 0 0 0 25px;
-	border: 1px outset #9BF;
 }
 
 h1, h2, h3, h4 {
@@ -41,25 +36,43 @@ h2::first-letter {
 	background-color: #FEE;
 }
 
-#menu {
-	background-color: #DDC;
+.menu {
+	background-color: #DBD;
 }
 
-#menu li {
+.menu li {
 	background-color: #FBD;
 	border: 1px dotted #FEF;
 }
 
-#menu li:hover {
-	background-color:#F7D;
+.menu li:hover {
+	background-color: #F7D;
 }
+
+.dropdown-menu {
+	background-color: #E8C;
+}
+
+.dropdown:hover {
+	color: #A07;
+	font-weight: bold;
+}
+
+.dropdown-links {
+	background-color: #DBD;
+	border: 1px dotted #FEF;
+}
+
+.dropdown-links li:hover {
+	background-color:#F5C;
+}
+
 .inner {
 	background-color: #EEE;
 }
 
-div.box, div.box2 {
+div.box {
 	background-color: #DDE;
-	color: #111;
 }
 
 div.box2 {
@@ -76,10 +89,6 @@ table.evt {
 
 table.evt td {
 	border: 1px dotted #6AD;
-}
-
-table.evt4 {
-	color: #222;
 }
 
 .co, .ac, .dr {
@@ -116,7 +125,7 @@ table.evt4 {
 
 select {
 	background-color: #EDD;
-    box-shadow: 2px 2px #963;
+    box-shadow: 2px 2px 1px #963;
 }
 
 #footer {

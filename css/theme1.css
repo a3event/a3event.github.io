@@ -20,11 +20,6 @@ hr {
 	border: 1px dotted #904;
 }
 
-img {
-	margin: 0 0 0 25px;
-	border: 1px outset #7AD;
-}
-
 h1, h2, h3, h4 {
 	text-shadow: 1px 1px 2px #333;
 }
@@ -41,16 +36,30 @@ h2::first-letter {
 	background-color: #904;
 }
 
-#menu {
-	background-color: #503;
-}
 
-#menu li {
+.menu li {
 	background-color: #614;
 	border: 1px dotted #FEF;
 }
 
-#menu li:hover {
+.menu li:hover {
+	background-color:#F5C;
+}
+
+.dropdown-menu {
+	background-color: #503;
+}
+
+.dropdown:hover {
+	color: #A07;
+}
+
+.dropdown-links {
+	background-color: #614;
+	border: 1px dotted #FEF;
+}
+
+.dropdown-links li:hover {
 	background-color:#F5C;
 }
 
@@ -58,9 +67,8 @@ h2::first-letter {
 	background-color: #235;
 }
 
-div.box, div.box2 {
+div.box {
 	background-color: #124;
-	color: #CCD;
 }
 
 div.box2 {
@@ -77,10 +85,6 @@ table.evt {
 
 table.evt td {
 	border: 1px dotted #6AD;
-}
-
-table.evt4 {
-	color: #222;
 }
 
 .co, .ac, .dr {
@@ -120,7 +124,7 @@ table.evt4 {
 
 select {
 	background-color: #7AF;
-    box-shadow: 2px 2px #369;
+    box-shadow: 2px 2px 1px #369;
 }
 
 #footer {
