@@ -22,10 +22,11 @@ hr {
 
 img {
 	margin: 0 0 0 25px;
-	border: 1px outset #7AD;
+	border: none;
+	border-radius: 5px;
 	max-height: 240px;
 	max-width: 500px;
-	display: block;
+	display: inline-block;
 }
 
 h1, h2, h3, h4 {
@@ -33,7 +34,7 @@ h1, h2, h3, h4 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	letter-spacing: 1px;
 	margin: 0 0 0.25em 0.25em;
-	padding: 0.2em 0.2em 0 0.2em;
+	padding: 0.2em 0.2em 0 0;
 	white-space: nowrap;
 	text-transform: uppercase;
 }
@@ -77,13 +78,14 @@ h4 {
 }
 
 ul {
-	list-style-image: url('https://a3event.github.io/src/gem.png');
+	list-style-image: url("https://a3event.github.io/src/gem.png");
 }
+
 ul li {
 	line-height: 18px;
 }
 
-#menu {
+.menu {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -91,18 +93,71 @@ ul li {
 	overflow: auto;
 }
 
-#menu li {
+.menu li {
 	border-radius: 5px;
 	display: inline-block;
-	width: 110px;
+	width: 120px;
 	height: 20px;
 	vertical-align: text-top;
 	text-align: center;
 }
 
+.dropdown-menu {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.dropdown {
+	margin: auto 0.3em;
+	padding: 0;
+	width: 90px;
+	height: 15px;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.dropdown-links {
+	display: none;
+	position: absolute;
+	left: 0;
+	margin-top: 17px;
+	padding: 0;
+	border-radius: 5px;
+	width: 100%;
+	vertical-align: text-top;
+	text-align: center;
+	overflow: scroll-x;
+}
+
+.dropdown-links ul {
+	float: left;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.dropdown-links li {
+	width: 110px;
+	height: 20px;
+	margin: auto 0.1em;
+}
+
+.dropdown:hover {
+	font-weight: bold;
+}
+
+.dropdown:hover .dropdown-links {
+	display: inline;
+}
+
+.dropdown-links li:hover {
+	font-weight: normal;
+}
+
 div.box, div.box2 {
-	padding: 0.1em;
+	padding: 0.2em;
 	margin: 0.5em;
+	border-radius: 5px;
 }
 
 div.box2 {
@@ -112,11 +167,13 @@ div.box2 {
 span.text2 {
 	font-style: italic;
 	font-size: 0.9em;
+	color: #66F;
 }
 
 table.evt {
 	border-collapse: separate;
 	border-spacing: 2px;
+	border-radius: 5px;
 	font-size: 0.9em;
 }
 
@@ -144,7 +201,7 @@ table.evt3 td {
 }
 
 .ytxt {
-	color: #BA4;
+	color: #A90;
 }
 
 .gtxt {
@@ -165,18 +222,22 @@ table.evt3 td {
 
 .trsp {
 	background-color: #F67;
+	color: #222;
 }
 
 .trsm {
 	background-color: #FA3;
+	color: #222;
 }
 
 .trat {
 	background-color: #F72;
+	color: #222;
 }
 
 .trwt {
 	background-color: #3AE;
+	color: #222;
 }
 
 .img_co, .img_ac, .img_dr {
@@ -184,26 +245,59 @@ table.evt3 td {
 }
 
 .img_co {
-	background: #FB3 url('https://a3event.github.io/src/comedy.png') 50%/20px no-repeat;
+	background: #FB3 url("https://a3event.github.io/src/comedy.png") 50%/20px no-repeat;
 }
 
 .img_ac {
-	background: #F30 url('https://a3event.github.io/src/action.png') 50%/20px no-repeat;
+	background: #F30 url("https://a3event.github.io/src/action.png") 50%/20px no-repeat;
 }
 
 .img_dr {
-	background: #06F url('https://a3event.github.io/src/drama.png') 50%/20px no-repeat;
+	background: #06F url("https://a3event.github.io/src/drama.png") 50%/20px no-repeat;
+}
+
+.downarrow {
+	color: #F00;
+	font-size: 1.2em;
+}
+
+.gacha_ssr, .gacha_sr, .free_ssr, .free_sr {
+	text-align: left !important;
+	font-size: 0.95em;
+}
+
+.gacha_ssr {
+	background-color: #900;
+}
+
+.gacha_sr {
+	background-color: #A27;
+}
+
+.free_ssr {
+	background-color: #6EB;
+	color: #222;
+}
+
+.free_sr {
+	background-color: #9CD;
+	color: #222;
+}
+
+.future {
+	font-style: italic;
+	font-family: Georgia, serif;
 }
 
 select {
 	background-color: #7AF;
-    box-shadow: 2px 2px #369;
+	border-radius: 5px;
 }
 
 #container {
 	height: 80vh;
 	overflow: hidden;
-	margin-top: 3.6em;
+	margin-top: 4em;
 	left: 0;
 }
 
@@ -223,6 +317,7 @@ select {
 textarea {
 	background-color: #69A;
 	font-family: Arial;
+	width: 80vw;
 }
 
 #footer {
@@ -250,10 +345,13 @@ input {
 	h1 {
 		font-size: 1.1em;
 	}
+	img {
+		max-height: 180px;
+	}
 	
 	#container {
 		height: 75vh;
-		margin-top: 3.8em;
+		margin-top: 4.5em;
 	}
 	
 	#footer {
