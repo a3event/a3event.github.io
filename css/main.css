@@ -127,7 +127,7 @@ ul li {
 	width: 100%;
 	vertical-align: text-top;
 	text-align: center;
-	overflow: scroll-x;
+	overflow: auto;
 }
 
 .dropdown-links ul {
