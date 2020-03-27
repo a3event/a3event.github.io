@@ -3,15 +3,15 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" type = "text/css" href="/css/main.css">
-	<link rel="stylesheet" type = "text/css" href="/css/theme1.css" id="theme_css">
+	<link rel="stylesheet" type = "text/css" href="css/main.css">
+	<link rel="stylesheet" type = "text/css" href="css/theme1.css" id="theme_css">
 	
 	<title>A3! || Advanced Fan Guide for EN Server</title>
-    <link rel='shortcut icon' type='image/x-icon' href="src/favicon.ico">
-	<base target="_self">
+    <link rel='shortcut icon' type='image/x-icon' href='src/favicon.ico'>
+	<base target="_blank">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="/js/dropdown.js"></script>
+	<script src="js/dropdown.js"></script>
 
 </head>
 
@@ -23,13 +23,33 @@
 
 	<div id="header">
 		<h1>[A3!] Act! Actors! Addict! : Advanced Fan Guide for EN Server</h1>
-		<ul id="menu">
-			<a href="#guide"><li>GUIDE</li></a>
-			<a href="#gems"><li>F2P GEMS</li></a>
-			<a href="#roster"><li>F2P ACTORS</li></a>
-			<a href="#border"><li>PTS BORDERS</li></a>
-			<a href="#link"><li>LINK SKILLS</li></a>
-		</ul>
+		
+		<div class="dropdown-menu">
+			<div class="dropdown">
+				EVENT <img src="src/favicon.ico" height="15px">
+				<div class="dropdown-links">
+				<ul class="menu">
+					<a href="#guide" target="_self"><li>EVENT GUIDE</li></a>
+					<a href="#strat" target="_self"><li>STRATEGIES</li></a>
+					<a href="#skills" target="_self"><li>LINK SKILLS</li></a>
+					<a href="#border" target="_self"><li>PTS BORDERS</li></a>
+					<a href="#prizes" target="_self"><li>PRIZES 1.6M+</li></a>
+				</ul>
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				F2P TIPS <img src="src/favicon.ico" height="15px">
+				<div class="dropdown-links">
+				<ul class="menu">
+					<a href="#gems" target="_self"><li>FREE GEMS</li></a>
+					<a href="#roster" target="_self"><li>FREE CARDS</li></a>
+				</ul>
+				</div>
+			</div>
+		
+		</div>
+		
 		<hr>
 	</div>
 
@@ -50,7 +70,7 @@
 		<h4>Disclaimer:</h4>
 		<ul>
 			<li>This guide is intended for the English/Global Version of A3! and is not fully applicable to other servers.</li>
-			<li>This guide is intended for players who have at least a basic understanding of the game (i.e. Rank 70+), who are either F2P or have limited means of obtaining gems, and are looking to tier within the first six tiers.</li>
+			<li>This guide is intended for players who have at least a basic understanding of the game (i.e. Rank 70+), who are either F2P or have limited means of obtaining gems, and are interested in tiering.</li>
 			<li>Gameplay optimization and gem saving is focused on rather than player desires and “best boys”.</li>
 			<li>Actor cards available to players will vary and thus individual player experiences may vary.</li>
 		</ul>
@@ -58,64 +78,7 @@
 
 	</div>
 
-
-
-	<div class="box">
-
-	<h2>Bonuses from Event Cards (Gacha & Event Rewards)</h2>
-
-	<h3>Bonus points per card use</h3>
-	<table class="evt evt3">
-	<tr>
-	<td></td>
-	<td>R</td>
-	<td>SR</td>
-	<td>SSR</td>
-	</tr><tr>
-	<td>Unbloomed</td>
-	<td>50</td>
-	<td>100</td>
-	<td>150</td>
-	</tr><tr>
-	<td>Bloomed +</td>
-	<td>175</td>
-	<td>225</td>
-	<td>275</td>
-	</tr><tr>
-	<td>Bloomed ++</td>
-	<td>325</td>
-	<td>375</td>
-	<td>425</td>
-	</tr>
-	</table><br>
-
-	<p>Average bonus points from friend/guest supports vary based on the popularity of the event and the player's "friend range" <span class="text2">(See: <a href="#friend">Friend and Guest Supports</a>)</span>. In a less popular event, it can be more difficult to find event cards.</p>
-	<ul>
-	<li>Fully Bloomed ++ cards have their stats multiplied by 4.
-		<ul>
-			<li>Regular SSR max: 24,000-24,760</li>
-			<li>Regular SR max: 18,064-18,992</li>
-			<li>Regular R max: 13,680-14,420</li>
-		</ul>
-	</li>
-	<li>Bloomed + cards have their stats multiplied by 3.
-		<ul>
-			<li>Regular SSR max: 17,100-17,640</li>
-			<li>Regular SR max: 12,738-13,374</li>
-			<li>Regular R max: 9,510-10,005</li>
-		</ul>
-	</li>
-	<li>Unbloomed cards have their stats multiplied by 2.
-		<ul>
-			<li>Regular SSR max: 10,800-11,140</li>
-			<li>Regular SR max: 7,952-8,336</li>
-			<li>Regular R max: 5,840-6,130</li>
-		</ul>
-	</li>
-	</ul>
-	<p>(These numbers can be higher with future card releases. For example, Wedding Tsumugi and Wedding Sakyo have higher stats than a normal SSR)</p>
-
-	</div>
+	
 	
 	<div>
 
@@ -148,21 +111,133 @@
 	<td>T11 (Top 80.0%)</td><td></td>
 	</tr><tr>
 	<td>T12 (Top 100.0%)</td><td></td>
-	</tr></table>
+	</tr></table><br>
 
-	<p><span class="t1t2">T1 (0.5%) and T2 (1%)</span> are very competitive and are mainly for bragging rights as they reward exclusive badges. It is not recommended to aim for these tiers without bloomed event gacha cards and/or hundreds of gems on hand.</p>
+	<p><span class="t1t2">T1 (0.5%) and T2 (1%)</span> are very competitive and are mainly for bragging rights as they reward exclusive badges.</p>
 	
-	<p>The most important tiers are <span class="t3">T3 (2%)</span> and <span class="t4t5">T5 (10%)</span>, as they are the minimum tiers that reward at least one copy of the event SSR at the end of the event.</p>
-	<p><span class="t6">T6 (20%)</span> is still a decent tier to be in as those who obtained the SR reward can fully bloom their SR.</p>
-	<p>Tiers below T6 are intended for beginners, casual players, and those uninterested in tiering.</p><br>
-
-	<p>Without any event cards and minimal gem usage, an active player can expect to rank within T4 to T6 (5%-20%) during a competitive event, and in a less competitive event as high as T3 (2%).</p>
+	<p><span class="t3">T3 (2%)</span> is the minimal tier that rewards two copies of the event SSR, and is also competition-heavy.</p>
+	<p><span class="t4t5">T5 (10%)</span> is the minimal tier that rewards one copy of the event SSR. <span class="t4t5">T4 (5%)</span> is the least competitive tier of the top five tiers because the difference between its rewards and that of T5 (10%) are minimal <span class="text2">(10 more gems and an extra copy of the SR).</span></p>
+	<p><span class="t6">T6 (20%)</span> is still a good tier to be in as those who have obtained the SR reward can fully bloom their SR.</p>
+	<p>Tiers below T6 are for beginners, casual players, and those uninterested in tiering.</p><br>
+	
+	<p>Rank prizes are given when the event has concluded.</p>
+	<p>T1 to T4 reward an extra copy of the SR/SSR. These are just for being able to display the unbloomed artwork of the card on your profile. Otherwise, they can be used to level up lead skills <span class="text2">(SR = SR coach card, SSR = x2 SR coach cards).</span></p>
 
 	</div>
 
 
+	
+	<div class="box">
+
+	<h2>Bonuses from Event Cards (Gacha & Event Rewards)</h2>
+
+	<h3>Bonus points per card</h3>
+	<table class="evt evt3">
+	<tr>
+	<td></td>
+	<td>R</td>
+	<td>SR</td>
+	<td>SSR</td>
+	</tr><tr>
+	<td>Unbloomed</td>
+	<td>50</td>
+	<td>100</td>
+	<td>150</td>
+	</tr><tr>
+	<td>Bloomed +</td>
+	<td>175</td>
+	<td>225</td>
+	<td>275</td>
+	</tr><tr>
+	<td>Bloomed ++</td>
+	<td>325</td>
+	<td>375</td>
+	<td>425</td>
+	</tr>
+	</table><br>
+	
+	<p>Every event card you use for a show will give additional bonus points per show.</p>
+
+	<p>Average bonus points from friend/guest supports vary based on the popularity of the event and the player's <span class="ytxt">"friend range"</span> <span class="text2">(See: <a href="#friend" target="_self">Friend and Guest Supports</a>)</span>. In a less popular event, it can be more difficult to find event cards.</p>
+	<ul>
+	<li>Fully Bloomed ++ cards have their stats multiplied by 4.
+		<ul>
+			<li>Regular SSR max: 24,000-24,760</li>
+			<li>Regular SR max: 18,064-18,992</li>
+			<li>Regular R max: 13,680-14,420</li>
+		</ul>
+	</li>
+	<li>Bloomed + cards have their stats multiplied by 3.
+		<ul>
+			<li>Regular SSR max: 17,100-17,640</li>
+			<li>Regular SR max: 12,738-13,374</li>
+			<li>Regular R max: 9,510-10,005</li>
+		</ul>
+	</li>
+	<li>Unbloomed cards have their stats multiplied by 2.
+		<ul>
+			<li>Regular SSR max: 10,800-11,140</li>
+			<li>Regular SR max: 7,952-8,336</li>
+			<li>Regular R max: 5,840-6,130</li>
+		</ul>
+	</li>
+	</ul>
+	<p>Card stats can be higher with future card releases. (i.e. Wedding Tsumugi and Wedding Sakyo have higher stats than a regular SSR.)</p>
+
+	</div>
+	
+	
+	
+	<div class="box">
+
+	<h2>Theater</h2>
+
+	<p>If the event has a play, tickets will be given from the point rewards and rarely from practice. Base points are 500 per ticket. Similarly to doing shows, every event card you use gives additional bonus points per ticket. These points are only significant with a high number of event cards, but every point counts.</p><br>
+
+	<p>Each unique actor will only count once. You can’t use both the unbloomed & bloomed version of the same card for additional points. Besides that, it doesn't matter where the actors are placed (Supporting Actor D counts too).</p>
+
+	<p>Only bloomed event cards double as original, so you can't use the unbloomed SR/SSR rewards as original cast.</p>
+	
+	<p>Don't forget to use your tickets before the event ends!</p><br>
+	
+	<img src="src/ss_03.png">
+	<p><span class="text2">An extra 3,500 Pts!</span></p><br>
+
+	<h4>OPTIMIZATION:</h4>
+	<p>Wait until you've obtained the event SR and/or SSR card before using all of your tickets for the maximum amount of bonus points.</p>
+	<p>If you're the forgetful type or just want to be safe, use one ticket for the 100% completion badge and save the rest of the tickets for after you have the event SR/SSR. The completion badge will not be available after the event ends.</p>
+	<p>If you have the gacha cards (R card + others), watch a play with the original cast AFTER the event ends, since you can obtain the "Original cast and costumes" badge anytime.</p>
+
+	</div>
+	
+	
+	
+	<div class="box">
+	<a id="friend" class="anchor"></a>
+
+	<h2>Friend and Guest Supports</h2>
+	<ul>
+		<li>The game encourages you to use different supports throughout the day <span class="text2">(the number 10 indicating friend points will show if you haven't used them yet)</span>, because using the same friend/guest too many times in a day makes them disappear for a while, limiting your support options.</li>
+		
+		<li>Who shows up on your support list also seems to be determined by time. If you can't find a specific friend or guest on your list, wait 5-10 minutes before updating again for a chance of the supports changing. But sometimes a friend/guest just won't appear no matter how many times you update.</li>
+
+		<li>If you send a friend request to another player and it stays as pending, then you cannot see or use that player’s cards until the request is either accepted by the receiver (friend) or revoked by you (the sender). This is because the game doesn’t allow you to send a request again to the same player while a current request is pending. <span class="text2">(Using a guest support prompts you to send a friend request)</span></li>
+
+		<li>Each player has a <span class="ytxt">"friend range"</span>; a specific range of players you can see (who can also see you) that is possibly tied to your player ID. This range is only a tiny percentage of the entire player base and likely expands as new players join. This is why many players you see in the rankings will never show up on your support list.
+		<ul>
+		<li>THEORY: During The Stranger event, there were around 12,000 players who participated in the event, and ~1,200 players (Top 10%) who received the SSR reward. With two fully bloomed cards with max lead skills, I was receiving 110 usages on average by players daily. I would estimate the range to be about 120 active players (Top 10%) or about 1,200 including all of the inactive/casual players. Let's say the total player base is 120,000 (reasonable guess based on the number of app downloads). Then 1% of all players can see my supports.</li>
+		</ul>
+		</li>
+		
+		<li>It may be advantageous to have friends outside of your <span class="ytxt">"friend range"</span> so that you have a larger pool of supports to choose from. You can find players outside of your "friend range" by searching for players in the "Find" section in-game (which refreshes from time to time). You can also add players off-site or have them add you from an alternate account.</li>
+		<li>Share your gacha cards if you've pulled them to thank friends and guests who helped you! To set your supporting actors, go to Edit Team, then the Show tab. The lead actors for the first three teams (Comedy, Action, Drama) can be used by friends and guests.</li>
+
+	</div>
+	
+	
 
 	<div class="box">
+	<a id="general" class="anchor"></a>
 
 	<h2>General Tips</h2>
 	
@@ -170,32 +245,34 @@
 	
 	<ul>
 		<li>Do all four types of shows (Matinee, Soiree, Finale, Encore) at least once each for the 5 gems (total of 20 gems).</li>
-		<li>Matinee shows have a higher chance of appearing than Soirees and Finales. Encores are said to appear 25% of the time after doing any of the other three shows.</li>
+		<li>There is some RNG when it comes to getting event shows. It's normal for Matinees to appear more often than Soirees and Finales. Encores are said to appear 25% of the time after doing any of the other three shows.</li>
 		<li>Know how long the event will last. Some will last 10 full days, others 9 days. Events that are a day shorter can cause some players to be unable to reach their goal in time, particularly the 1.15mil SSR reward.</li>
-		<li>Manage your resources carefully throughout the event. You will be showered with prizes in the first two days, but they can dry up just as quickly. Keep an eye on the upcoming Kame boxes and Bentos you'll receive as you inch closer to reward milestones.</li>
+		<li>Manage your resources carefully throughout the event. You will be showered with prizes in the first two days, but they can dry up just as quickly. Keep an eye on the upcoming kame boxes and bento you'll receive as you inch closer to reward milestones.</li>
 		<li>Don't hoard all of your items until the very last day unless you think you can use them all quickly enough.</li>
 		<li>You don't <span class="text2">have</span> to do every show. A show that expires stays at the same level the next time you encounter it. The level will only go down (level 1 minimum) if you cancel it.</li>
 	</ul>
 	
 	<h3>If you are not ranking:</h3>
 	<ul>
-		<li>Patience is key. Don’t worry about your ranking in the first 3 or 4 days of an event; many players will rush to get to the top. Your ranking should stabilize by the 4th or 5th day. The days in the middle (5, 6, 7, 8) slow down as players exhaust their gems and kame boxes. There will be another rush during the last day of an event, but there will be a notable amount of players who will stop trying after reaching certain milestones (particularly the 1.15mil SSR reward).</li>
-		<li>You shouldn't have an issue with LP running out. <h4>Bento/onigiri:</h4> Use most of them for the Friday/Weekend practices for trophies and coach cards. Consider saving one or two of them for the remainder of the event in case, or rely on ranking up refills/the ones you'll get from rewards later on.</li>
+		<li>Patience is key. Don’t worry about your ranking in the first 3 or 4 days of an event; many players will rush to get to the top. Your ranking should stabilize by the 4th or 5th day.</li>
+		<li>The days in the middle (5, 6, 7, 8) slow down as players exhaust their gems and kame boxes. There will be another rush during the last day of an event, but there will be a notable amount of players who will stop trying after reaching certain milestones (particularly the 1.15mil SSR reward).</li>
+		<li>You shouldn't have an issue with LP running out. <h4>Bento/onigiri:</h4> Use most of them for the Friday/Weekend practices for trophies and coach cards. Consider saving at least one or two of them for the remainder of the event in case, or rely on rank up refills/the ones you'll get from rewards later on.</li>
 		<li><h4>Kame buns/boxes:</h4> save for Encores.</li>
 	</ul>
 	
 	<h3>If you plan to rank:</h3>
 	
 	<ul>
+		<li>Be prepared! Set up your teams with optimal link skills in advance and keep in mind other possible link skill combos you could use once you obtain the event SR/SSR. Have trophies and coach cards handy in case you need them.</li>
 		<li>Your ranking should stabilize by the 2nd or 3rd full day.</li>
 		<li>It's possible to get by with just free LP and not have to spend gems on LP refills. <h4>Bento/onigiri:</h4> save them for the event practices. You can probably use some for the Friday/Weekend practices, but always keep enough on hand for the amount of gems you plan to use.</li>
 		<li><h4>Kame buns/boxes:</h4> they are interchangeable with gems. You WILL spend gems.</li>
-		<li><h4>Borderline Fighting & Safety:</h4> Be prepared for last-day borderline fighting between those close to the borderline and those just underneath it. It can be hectic and stressful, especially during the <span class="rtxt">Bloodbath</span> (the last two hours before an event ends). Alternatively, you can attempt to rank higher than you normally have to for security. You are considered <span class="gtxt">"safe"</span> when you are in a position that is much higher than the borderline of your goal tier and can stop playing during the <span class="rtxt">Bloodbath</span>. This position varies by tier and by event competitiveness, but generally you should be safe within the "Top 40%" of the tier. The safe range also includes players who are trying to get into the tier above them. Estimated safe points:
-		<ul><li>For T1 (Top 0.5%), the <span class="gtxt">safe</span> range is 0.1%-0.2%. Those in 0.3% should be safe due to the larger point gaps in this tier. Players near the bottom of 0.4% and below are <span class="rtxt">not</span> safe and must keep doing shows to keep their rank. Most players will only be fighting over 0.5%.</li>
+		<li><h4>Borderline Fighting & Safety:</h4> last-day borderline fighting between those close to the borderline and those just underneath it can be hectic and stressful, especially during the <span class="rtxt">Bloodbath</span> (the last two hours before an event ends). Alternatively, you can attempt to rank higher than you normally have to for security. You are considered <span class="gtxt">"safe"</span> when you are in a position that is much higher than the borderline of your goal tier and can stop playing during the <span class="rtxt">Bloodbath</span>. This position varies by tier and by event competitiveness, but generally you should be safe within the "Top 40%" of the tier. The safe range also includes players who are trying to get into the tier above them. Estimated safe points:
+		<ul><li>For T1 (Top 0.5%), the <span class="gtxt">safe</span> range is 0.1%-0.2%. Those in 0.3% should also be safe due to the larger point gaps in this tier. Players near the bottom of 0.4% and below are <span class="rtxt">not</span> safe and must keep doing shows to keep their rank. Most players will only be fighting over 0.5%.</li>
 		<li>For T1 (Top 1%), the <span class="gtxt">safe</span> range is 0.6%-0.7%. Bottom of 0.8% and below are <span class="rtxt">not</span> safe.</li>
 		<li>For T3 (Top 2%), the <span class="gtxt">safe</span> range is 1.1%-1.3%. Due to the slightly higher competition, players in 1.4% <span class="text2">might</span> be safe. Bottom of 1.5% and below are <span class="rtxt">not</span> safe.</li>
 		<li>For T4 (Top 5%), the <span class="gtxt">safe</span> range is 2.1%-4.0%. Due to the much lower competition, players even at 4.5% <span class="text2">might</span> be safe.</li>
-		<li>T1 to T3 borders can increase by roughly 100,000 Pts <span class="text2">(Seasonal: 1,000)</span> alone during the <span class="rtxt">Bloodbath</span>. The point gaps of players near the borders will shrink dramatically as the safe players in the top of their tier stop playing.</li></ul>
+		<li>T1 to T3 borders can increase by roughly 100,000 Pts <span class="text2">(Seasonal: 1,000)</span> alone during the <span class="rtxt">Bloodbath</span>.</li></ul>
 		</li>
 	</ul>
 	
@@ -224,10 +301,11 @@
 
 
 	<div class="box">
+	<a id="strat" class="anchor"></a>
 
 	<h2>Ranking Strategies</h2>
 
-	<p>These strategies can be switched back and forth or even combined depending on one’s gems and available playtime. Feel free to try and modify as you see fit.</p>
+	<p>These strategies can be switched back and forth and even combined depending on one’s gems and available playtime. Feel free to try and modify as you see fit.</p>
 
 	<div class="box2">
 	<h3>The “Play whenever I want to" strategy</h3>
@@ -269,7 +347,7 @@
 	<h4 class="rtxt">Cons</h4>
 	<ul>
 	<li>Less rewards than higher ranking players.</li>
-	<li>Less training items & rank ups if you don't use up all of your LP/bentos.</li>
+	<li>Less training items & rank ups if you don't use up all of your LP/bento.</li>
 	</ul>
 	</td></tr></table>
 	
@@ -300,7 +378,6 @@
 	<p>You normally have 5 SP max (overfills to 10 max). Each SP takes 20 minutes to regenerate. From 0 SP at a timer of 19:59, it takes 1 hour and 40 minutes to completely refill all SP.</p>
 	<p>Use up as much free SP as possible every time you play. If you need one more SP for a Finale, you can wait for it to regen and maximize your refill timer (that is, if a surprise Encore doesn't show up). If you only have 1 SP remaining and need 3 for a Finale, it is recommended to just let it expire (in this case the timer for full SP will be 20 mins shorter).</p>
 	<p>App notifications can be turned on to tell you when your SP is full.</p>
-	<p>Sleeping is recommended.</p>
 
 	<h4>OPTIMIZATION:</h4>
 	<p>I would shorten the wait time to 1 hour and 30 minutes max, so that there are still 10 minutes to do event practices in case Matinees keep showing up (and thus "wasting" the timer for the next SP regen).</p>
@@ -308,6 +385,7 @@
 
 	<h4>ZERO GEMS:</h4>
 	<p>It's possible to obtain the SSR reward (1.15mil Pts) by playing everyday and still get 8 hours of sleep.</p>
+	<p>Sleeping is recommended.</p>
 
 	<table><tr>
 	<td width="40%">
@@ -327,11 +405,11 @@
 	</div>
 
 	<div class="box2">
-	<h3>The “2 SP Finale pls” (F2P) strategy</h3>
+	<h3>The “2 SP Finale (F2P) strategy</h3>
 	
 	<table class="evt evt2"><tr>
 	<td>Stress level:</td>
-	<td class="rtxt">High</td>
+	<td><span class="rtxt">High</span>, then <span class="gtxt">Low</span></td>
 	</tr><tr>
 	<td>Tiers to aim for:</td>
 	<td><span class="t4t5">T4 T5</span><br>Top 5.0% - 10%</td>
@@ -367,7 +445,7 @@
 	<ul>
 	<ul>
 	<li>Saves SP and earn more Pts/SP on average from doing more 2 SP Finales.</li>
-	<li>Can reach the 1.15mil reward quicker and not worry about panicking during the last hours. Can even stop playing the event a day or so earlier.</li>
+	<li>Can reach the 1.15mil reward quicker and not worry about rushing on the last day. Can even stop playing the event a day or so earlier.</li>
 	</ul></td><td width="40%">
 	<h4 class="rtxt">Cons</h4>
 	<ul>
@@ -393,7 +471,7 @@
 	<td class="rtxt">No</td>
 	</tr><tr>
 	<td>Beginner-Friendly:</td>
-	<td class="rtxt">No</td>
+	<td class="ytxt">Maybe</td>
 	</tr></table>
 
 	<br>
@@ -411,17 +489,18 @@
 	<p>You could either rush to the top and slow down after getting the event SSR, or play frequently everyday (the SSR can be achieved more reasonably by the 4th full day).</p>
 	
 	<h4>VARIATION:</h4>
-	<p>Only spend gems on the gacha, and little to none for SP refills. T3 is possible with just one fully bloomed card, depending on how competitive the event is. Unless you lucked out and have a team of five fully bloomed gacha cards, you'll likely be spending additional gems on top of the gacha for T1/T2.</p>
+	<p>Only spend gems on the gacha, and little to none for SP refills. T3 is possible with just one fully bloomed card, depending on how competitive the event is. But unless you lucked out and have a team of five fully bloomed gacha cards, you'll likely be spending additional gems on top of the gacha for T1/T2.</p>
 	
 	<h4>OPTIMIZATION:</h4>
-	<p>If you save all of your bentos and onigiris for only the event practices, then you can avoid spending any additional gems on LP refills.</p>
+	<p>If you save all of your bento/onigiri for only the event practices, then you can avoid spending any additional gems on LP refills.</p>
 
 	<table><tr>
 	<td width="40%">
 	<h4 class="gtxt">Pros</h4>
 	<ul>
 	<ul>
-	<li>Standard way to rank easily and obtain fully bloomed event SSRs and badges.</li>
+	<li>Standard way to rank easier and obtain fully bloomed event SSRs and badges.</li>
+	<li>Stat boosts really helps for beginners and those lacking SSRs/a trained roster.</li>
 	<li>Feels rewarding to have powerful cards, doing Encores for 3 SP, and stay consistent in the top ranks.</li>
 	</ul></td><td width="40%">
 	<h4 class="rtxt">Cons</h4>
@@ -429,6 +508,7 @@
 	<li>RIP your F2P gems.</li>
 	<li>Likely have to spend additional gems for SP refills for the Top 1.0%.</li>
 	<li>Still have to play the event long enough to spend all of those gems.</li>
+	<li>Despite the event cards being powerful, is not ideal for beginners as they may not have enough training items to max their cards.</li>
 	</ul>
 	</tr></table>
 	</div>
@@ -458,7 +538,7 @@
 
 	<p>Ask yourself:</p>
 	<ul><li>Do you care about the featured gacha cards? (Best boys?)</li>
-		<li>Will the gacha SSR also be useful in future events? <span class="text2">(See: <a href="#roster">Actor Management</a>)</span></li>
+		<li>Will the gacha SSR also be useful in future events? <span class="text2">(See: <a href="#roster" target="_self">Actor Management</a>)</span></li>
 	</ul>
 	<p>If not, then you can ignore the gacha altogether.</p>
 
@@ -493,57 +573,12 @@
 
 
 	<div class="box">
-	<a id="friend" class="anchor"></a>
-
-	<h2>Friend and Guest Supports</h2>
-	<ul>
-		<li>The game encourages you to use different supports throughout the day (the number 10 indicating friend points will show if you haven't used them yet), because using the same friend/guest too many times in a day makes them not appear again for a while, limiting your support options. It appears that the friend points may reset in ~12 hours as opposed to the next day.</li>
-
-		<li>If you send a friend request to another player and it stays as pending, then you cannot see or use that player’s cards until the request is either accepted by the receiver (Friend) or revoked by you (the sender). This is probably because the game doesn’t allow you to send a request again to the same player while a current request is pending. (Using a guest support prompts you to send a friend request)</li>
-
-		<li>There is a specific range of players you can see (who can also see you), which can vary between accounts and is possibly tied to your player ID. This range is estimated to be a tiny percentage of the entire player base and likely increases as new players join. It may be advantageous to have friends who are outside of this range (i.e. added from the "Find" section in Friends, offsite, from an alt account). This is why many players you see in the rankings will normally never show up on your support list.
-		<ul>
-		<li>During The Stranger event, there were around 12,000 players who participated in the event, and ~1,200 players (Top 10%) who obtained the SSR reward. With two fully bloomed cards with max lead skills, I was receiving 110 usages on average by players daily. I estimate the range to be from about 60-120 active (Top 10%) players (and about 600 to 1,200 including all the inactive/casual players).</li>
-		<li>Friend points refresh after ~12 hours so the usage of a guest support from the same player can count up to twice a day.</li>
-		</ul>
-		</li>
-		
-		<li>Don't be a party pooper. Share your gacha cards if you pulled them to thank friends and guests who helped you! =)</li>
-
-	</div>
-
-
-
-	<div class="box">
-
-	<h2>Theater</h2>
-
-	<p>If the event has a play, tickets will be given from the point rewards and rarely from practice. Every point counts! Base points are 500 per ticket. Similarly to doing shows, every event card you use gives additional bonus points per ticket.</p><br>
-
-	<p>Each unique actor will only count once. You can’t use both the unbloomed & bloomed version of the same card for additional points. Besides that, it doesn't matter where the actors are placed (Supporting Actor D counts too).</p>
-
-	<p>Only bloomed event cards double as original, so you can't use the unbloomed SR/SSR rewards as original cast.</p>
-	
-	<p>Don't forget to use your tickets before the event ends!</p><br>
-	
-	<img src="src/ss_03.png">
-
-	<h4>OPTIMIZATION:</h4>
-	<p>Wait until you've obtained the SR/SSR rewards before using all of your tickets as they count for bonus points.</p>
-	<p>If you're the forgetful type or just want to be safe, use one ticket for the badge and save the rest of the tickets for after you have the event SR/SSR. The 100% completion badge will not be available after the event ends.</p>
-	<p>If you have the gacha cards (R card + others), watch a play with the original cast AFTER the event ends, since you can obtain the "Original cast and costumes" badge even after the event ends.</p>
-
-	</div>
-
-
-
-	<div class="box">
 
 	<h2>Rookie Mistakes</h2>
 	<ul>
 	<li>Accidentally pressing “Start Show” instead of “Cancel” on a Matinee. There is no confirmation to start a show if you have enough SP. <span class="text2">(So many Matinees in a row...)</span></li>
 	<li>Accidentally pressing “Start Show” with the wrong boost amount. Always make sure you will <span class="rtxt">pass</span> a show before confirming! <span class="text2">(Ended up wasting an extra SP to pass the show)</span></li>
-	<li>Being shy of a couple hundred points to passing a Finale or Encore with the ideal SP amount. Figuring out which cards to train at the last minute isn’t the greatest idea. Be prepared if you want to rank! Set up your teams with optimal link skills in advance and keep in mind other possible link skill combos you could use once you obtain the event SR/SSR. Have trophies and coach cards handy in case you do need them. <span class="text2">(I finished training a card I needed, panicked with seconds on the clock left -- misclicking the wrong boost -- wasting an SP, and then the show expired… yeah...)</span></li>
+	<li>Being shy of a couple hundred points to passing a Finale or Encore with the ideal SP amount. Figuring out which cards to train at the last minute isn’t the greatest idea. Be prepared if you want to rank! <span class="text2">(See: <a href="#general" target="_self">General Tips</a>) (I finished training a card I needed, panicked with seconds on the clock left -- misclicking the wrong boost -- wasting an SP, and then the show expired… yeah...)</span></li>
 	<li>Waiting for one SP to regenerate and then forget to check the app again in time, coming back to an expired timer. It’s handy to write down the time or set an alarm, as short as the timers are, or leave the app idle if it’s only a couple of minutes. <span class="text2">(Still do this from time to time ;-; Not my 3 SP Encore… uhh pretend it never happened xD)</span></li>
 	<li>Staying up late, then falling asleep in the middle of an event practice or while waiting for SP. <span class="text2">(Yup)</span></li>
 	</ul>
@@ -565,43 +600,17 @@
 	
 	<div class="box">
 	
-	<h2>Other EN Server Guides</h2>
+	<h2>Other EN Server Links</h2>
 	<ul>
 		<li><a href="https://www.reddit.com/r/A3ActorsInTraining/comments/fnup0m/a_quick_guide_for_events/">"A Quick Guide for Events"</a> by /u/choco_kitten</li>
 		<li>Check out the <a href="https://www.reddit.com/r/A3ActorsInTraining/">Subreddit</a> for event tips, discussion and more!</li>
+		<li><a href="https://twitter.com/MankaiCompanyEN">Official EN Twitter</a> and <a href="https://www.instagram.com/mankai_company_en/">Official EN Instagram</a> for upcoming banners and events so you can be prepared in advance!</li>
 	</div>
 
 
 	
 	</div>
 	
-	
-	</div>
-	
-	
-	
-	<div class="inner">
-	<a id="calc" class="anchor"></a>
-	
-	<div class="box">
-	
-	Factors to consider when calculating points.
-	
-	<br>
-	
-	<ul>
-	<li>Amount of free SP from natural regen that can be used (does the player sleep)</li>
-	<li>Kame buns and boxes from event rewards</li>
-	<li>Daily login bonus</li>
-	<li>Rank ups</li>
-	<li>The player's bonus points from gacha event cards</li>
-	<li>The amount of SP used to do each show (Comedy, Action, Drama)</li>
-	<li>If the player does Matinees</li>
-	<li>If the player does Soirees</li>
-	<li>If the player spends gems on refilling LP</li>
-	</ul>
-	
-	</div>
 	
 	</div>
 	
@@ -637,7 +646,7 @@
 		<p>= ~247 gems every 4 weeks</p><br>
 		
 		<h3>Other Bonuses</h3>
-		<p>More information can be found <a target="_blank" href="https://yaycupcake.com/a3/index.php?title=Bonuses">here</a>.</p>
+		<p>More information can be found <a href="https://yaycupcake.com/a3/index.php?title=Bonuses">here</a>.</p>
 		<p>In short:</p>
 		<ul>
 		<li>Ranking up can give either 5 Premium Tokens or 50 gems every five ranks, until Rank 200 where it is every 10 ranks.</li>
@@ -665,28 +674,18 @@
 	</div>
 	
 	<div class="box">
-		<h2>About Premium Tokens</h2>
-		<p>Premium tokens are currently obtainable from ranking up and from event rewards.</p>
-		<p>They can only be used for Premium Tryouts and the upcoming Birthday Tryouts <span class="text2">(predicted to start in June 2020)</span>.</p>
-		<p>Use 5 tokens to do a single pull equivalent to the last pull (guaranteed SR) of a multi pull using gems.</p>
-		<p>5 tokens are worth more than a single pull (15 gems) but definitely aren't worth more than one multi-pull (145 gems).</p>
-		<ul>
-			<li>Beginners should pull on a banner several times and/or use their tokens for some much-needed SRs and SSRs. Once you have a decent amount of initial cards and no longer  rely on R cards, save your remaining tokens for the Birthday Tryouts.</li>
-		</ul>
-	</div>
-	
-	<div class="box">
 		<h2>Gem Management Tips</h2>
 		<p>After reaching Rank 100+ with your legendary actor management skills, you've reached the endgame of A3! <span class="text2">where we all suffer in endless event hell</span> -- or as I like to call it, a "gem management" game. These shiny red diamonds are the limited resource for pulling the gacha and for ranking, besides shelling out for premium gems with real money.</p><br>
+		
+		<img src="src/ss_01.png">
 		<p>Free gems have little restrictions. The only things exclusive to premium gems are the infrequent one-time banner offers that allow you to choose a card of your liking, and a daily pull on Premium Tryouts for a discount. Neither are a necessity to progress.</p>
 		<p>Saving gems takes willpower, but it's not impossible.</p>
-		<img height="auto" src="src/ss_01.png"></img>
 		<ul>
 			<li>Don't pull on every banner.
 				<ul>
 				<li>You could ignore banners that don't have an event attached to them, as there is currently no guaranteed "pity system" implemented.</li>
-				<li>You could ignore banners that don't feature your best boy(s) as the SSR/SR. <span class="text2">Sometimes, I ignore the featured SR of one of my best boys too if I don't care for the featured SSR(s).</span></li>
-				<li>You could ignore a banner if you already own an actor's SSR card of the same attribute as the featured SSR. <span class="text2">(See: <a href="#roster">Actor Management</a>)</span></li>
+				<li>Choose only a few actors ("best boys") to pull for. You could ignore banners that don't feature your best boy(s) as the SSR/SR. <span class="text2">Sometimes, I ignore the featured SR of one of my best boys too if I don't care for the featured SSR(s).</span></li>
+				<li>You could ignore a banner if you already own an actor's SSR card of the same attribute as the featured SSR. <span class="text2">(See: <a href="#roster" target="_self">Actor Management</a>)</span></li>
 				</ul>
 			</li>
 			<li>Ignore pulling just for R gacha cards.
@@ -704,21 +703,32 @@
 			</li>
 		</ul>
 		<ul>
-		<li><a target="_blank" href="https://www.reddit.com/r/A3ActorsInTraining/comments/f84fmu/f2p_your_strategy/">"F2P, Your Strategy?"</a> asked by /u/black_bunny0524</li>
+		<li><a href="https://www.reddit.com/r/A3ActorsInTraining/comments/f84fmu/f2p_your_strategy/">"F2P, Your Strategy?"</a> asked by /u/black_bunny0524</li>
 		</ul>
 		
-		</div>
+	</div>	
 		
-		<div class="box">
+	<div class="box">
+		<h2>About Premium Tokens</h2>
+		<p>Premium tokens are a currency comparable to that of gems. They are considered to be worth more than a single pull (15 gems) but aren't nearly worth more than one multi-pull (145 gems).</p>
+		<p>They are currently obtainable from ranking up and from event rewards.</p>
+		<p>They can only be used for Premium Tryouts and the upcoming Birthday Tryouts <span class="text2">(predicted to start in June 2020)</span>.</p>
+		<p>Use 5 tokens to do a single pull equivalent to the last pull (guaranteed SR or higher) of a multi-pull.</p>
+		<ul>
+			<li>Beginners should pull on a banner several times and/or use their tokens for some much-needed SRs and SSRs. Once you have a decent amount of initial cards and no longer  rely on R cards, save your remaining tokens for the Birthday Tryouts.</li>
+		</ul>
+	</div>
+		
+	<div class="box">
 		
 		<h2>Tapjoy Offers</h2>
-		<p>Ads and Tapjoy offers are unique to the EN server and the majority of offers are only available for Android devices. Offers include surveys, quizzes, and reaching certain milestones in downloaded promotional apps to receive extra gems. However, not all offers are made equal. The following thread contains lots of useful information about which offers to do and which offers to avoid.</p>
+		<p>Ads and Tapjoy offers are unique to the EN server and the majority of offers are only available for Android devices. Offers include surveys, quizzes, downloading promotional apps and reaching certain milestones in these apps to receive extra gems. However, not all offers are made equal. The following thread contains lots of useful information about which offers to do and which offers to avoid.</p>
 		<ul>
-			<li><a target="_blank" href="https://www.reddit.com/r/A3ActorsInTraining/comments/f9dnz8/a_gem_offer_guidediscussion/">"A Gem Offer Guide/Discussion"</a> by /u/a_rietty</li>
+			<li><a href="https://www.reddit.com/r/A3ActorsInTraining/comments/f9dnz8/a_gem_offer_guidediscussion/">"A Gem Offer Guide/Discussion"</a> by /u/a_rietty</li>
 		</ul>
 		<p>General tips:</p>
 		<ul>
-			<li>Check the Play Store for ratings and reviews before starting an offer.</li>
+			<li>Before starting an offer, check the Play Store for ratings and reviews and search for the app to see if the offer has been completed before.</li>
 			<li>Don't make careless in-app purchases or you might end up spending more than what the reward is worth. If you are strictly F2P, ignore the offers that require you to purchase something. Some offers can be completed for free; all you need is patience.</li>
 			<li>Don't start an offer that will take days or weeks to complete while an A3! event is going on. Keep in mind that offers are time-limited and juggling between one and the event can be stressful.</li>
 		<ul>
@@ -727,8 +737,8 @@
 	<div class="box">
 		<h2>About gacha gambling addiction</h2>
 		<ul>
-			<li><a target="_blank" href="https://www.reddit.com/r/FFBraveExvius/comments/7jmezv/a_whale_of_a_tale/">"A Whale of a Tale"</a> by /u/nothing024</li>
-			<li><a target="_blank" href="https://www.reddit.com/r/gachagaming/comments/flzglz/im_a_whale_who_quit_cold_turkey_if_you_have_money/">"I’m a whale who quit cold turkey. If you have money spending problems, or if you are a whale who isn’t filthy rich... please read"</a> by /u/TheAsscendedOne</li>
+			<li><a href="https://www.reddit.com/r/FFBraveExvius/comments/7jmezv/a_whale_of_a_tale/">"A Whale of a Tale"</a> by /u/nothing024</li>
+			<li><a href="https://www.reddit.com/r/gachagaming/comments/flzglz/im_a_whale_who_quit_cold_turkey_if_you_have_money/">"I’m a whale who quit cold turkey. If you have money spending problems, or if you are a whale who isn’t filthy rich... please read"</a> by /u/TheAsscendedOne</li>
 		</ul>
 		
 	</div>
@@ -742,17 +752,101 @@
 	
 		<div class="box">
 			<h2>Actor Management Tips</h2>
-			<p>Free SSR cards from events are immensely helpful for F2P.</p>
+			<p>Free cards from events are immensely helpful for F2P.</p>
 			<ul>
-				<li>The ideal roster would be to have three SSRs of each of the 20 actors, one for each show type (Comedy, Action, Drama).</li>
-				<li>If an SSR for that actor isn't available for the player to use, SRs are the next strongest cards. Fully bloomed SRs can be on par with unbloomed SSRs.</li>
-				<li>Keep in mind that future cards have "powercreep" and have higher stats on average, especially their strongest attribute.</li>
+				<li>The ideal roster would be to have three SSRs of each actor covering all three attributes: one for Comedy, one for Action, and one for Drama.</li>
+				<li>If an SSR for that actor isn't available for the player to use, SRs are the next strongest cards that can be used in place of SSRs. Fully bloomed, fully trained SRs are on par with unbloomed, untrained SSRs.</li>
+				<li>If neither an SSR nor SR of an actor is available, R cards are a last resort option. Training them is cheap, but they aren't useful in the long run.
+				<ul>
+					<li>A F2P exception for R cards is the R Drama Hisoka card. There will not be any free, non-gacha SSR/SR Hisoka cards in Part 1 <span class="text2">(A3!'s first year).</span></li>
+				</ul>
+				</li>
+				<li>Owning more than one SSR of the same +Attribute of the same actor is not necessary and just for collecting purposes. (i.e. if you own the bloomed Sardines Yuki which is +Action, you can ignore banners featuring a SSR +Action Yuki). Keep in mind that future cards have "powercreep" and have higher stats on average, especially their strongest attribute. Whether these stronger cards are worth pulling for is up to the player.</li>
 			</ul>
 			
-			<table class="evt"><tr>
-			<td class="img_co"></td>
-			</tr></table>
 		</div>
+		
+		<div class="box" style="overflow:auto;">
+		
+			<h2>Actor Card Table (Part 1)</h2>
+			
+			<table class="evt evt5"><tr>
+			<td>ACTOR</td>
+			<td class="img_co"></td>
+			<td class="img_ac"></td>
+			<td class="img_dr"></td>
+			</tr><tr>
+			<td class="trsp">Sakuya</td>
+			<td class="gacha_ssr"><span class="dr">Dr<span class="downarrow">▼</span></span>[SSR] Gacha: Sakura Diary</td>
+			<td class="free_ssr"><span class="dr">Dr<span class="downarrow">▼</span></span>[SSR] Initial: Premium Tryouts</td>
+			<td class="gacha_ssr future"><span class="dr">Dr<span class="downarrow">▼</span></span>[SSR] Gacha: Future banner</td>
+			</tr><tr>
+			<td class="img_ac">⇧ ⇧ ⇧ • ⇧ ⇧ ⇧</td>
+			<td class="free_sr"><span class="dr">Dr<span class="downarrow">▼</span></span>[SR] Initial: About to Bloom</td>
+			<td class="gacha_sr future"><span class="co">Co<span class="downarrow">▼</span></span>[SR] Gacha: Future banner</td>
+			<td class="gacha_sr"><span class="co">Co<span class="downarrow">▼</span></span>[SR] Gacha: Alex in Wonderland</td>
+			</tr><tr>
+			<td class="dr">Best: Drama [3]</td>
+			<td></td>
+			<td></td>
+			<td class="free_sr future"><span class="co">Co<span class="downarrow">▼</span></span>[SR] Future Event reward</td>
+			</tr><tr>
+			<td>F2P: Bad</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			</tr><tr>
+			<td colspan="4">+Dr Sakuya cards are hard to get for F2P, who will rely on a future event reward card.</td>
+			</tr><tr>
+			<td class="trsp">Masumi</td>
+			<td class="gacha_ssr"><span class="ac">Ac<span class="downarrow">▼</span></span>[SSR] Gacha: Say I Do!</td>
+			<td class="free_ssr"><span class="co">Co<span class="downarrow">▼</span></span>[SSR] Event: Alex in Wonderland</td>
+			<td class="free_ssr"><span class="co">Co<span class="downarrow">▼</span></span>[SSR] Initial: Premium Tryouts</td>
+			</tr><tr>
+			<td class="img_dr">⇧ ⇧ ⇧ • ⇧ ⇧ ⇧</td>
+			<td class="gacha_sr future"><span class="ac">Ac<span class="downarrow">▼</span></span>[SR] Gacha: Future banner</td>
+			<td class="gacha_ssr future"><span class="Co">Co<span class="downarrow">▼</span></span>[SSR] Gacha: Future banner</td>
+			<td class="gacha_sr future"><span class="co">Co<span class="downarrow">▼</span></span>[SR] Gacha: Future banner</td>
+			</tr><tr>
+			<td class="dr">Best: Drama [3]</td>
+			<td></td>
+			<td class="free_sr"><span class="co">Co<span class="downarrow">▼</span></span>[SR] Initial: About to Bloom</td>
+			<td></td>
+			</tr><tr>
+			<td>F2P: OK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			</tr><tr>
+			<td colspan="4">+Dr and +Ac Masumi are F2P obtainable. +Co less important to cover.</td>
+			</tr></table><br>
+			
+			<p>How to use the table:</p>
+			<ul>
+				<li>Attribute: There are three types of shows -- Comedy, Action, and Drama.</li>
+				<li>Stats: Every card has a strong stat, a good stat, and a weak stat.</li>
+				<li>FORTE [⇧ ⇧ ⇧]: The actor's best attribute. You will never find a card of the actor that has this attribute as their weak stat.</li>
+				<li>Weak stat [<span class="downarrow">▼</span>]: The weakest stat on that card.</li>
+				<li>Best [#]: This actor's overall best attribute for link skill combinations, and the total number of link skills they have.</li>
+				<li>F2P: How F2P-Friendly this actor's cards are in Part 1.</li>
+				<li>Gacha: <span class="rtxt">Not F2P-Friendly.</span> You must pull on the banner for a chance of obtaining this card.</li>
+				<li>Event: <span class="gtxt">Accessible to F2P.</span> These cards are given out as event prizes.</li>
+				<li>Initial: <span class="gtxt">Accessible to F2P.</span> These cards are not limited and always have a chance of being pulled.</li>
+				<li>Future: These cards are not yet available on the EN server. Upcoming tryouts and events can be predicted based on the past JP scouts and events.</li>
+			</ul>
+			
+			<p>R cards are ignored as they are typically irrelevant.</p>
+			
+		</div>
+		
+		<div class="box">
+		<h2>Upcoming/Future Events (Contains Spoilers)</h2>
+		<ul>
+			<li><a href="https://www.reddit.com/r/A3ActorsInTraining/comments/dtqgh8/event_master_list_of_a3s_first_year_of_scouting/">[Event] Master List of A3's First Year of Scouting & Events Pt. 2 (July-December)</a> (text version)</li>
+			<li><a href="https://yaycupcake.com/a3/index.php?title=Scouting_Events#tab=2017">First Year Scouting/Tryouts</a> (contains spoilers for current JP scout)</li>
+			<li><a href="https://yaycupcake.com/a3/index.php?title=Events#tab=2017">First Year Events</a> (contains spoilers for current JP event)</li>
+		</div>
+		
 	</div>
 	
 	
@@ -774,7 +868,7 @@
 				<col span="1" class="t6">
 				<col span="3">
 			</colgroup>
-			<tr class="gray2">
+			<tr class="gray2" style="font-weight:bold">
 				<td>EVENT</td>
 				<td>DATE</td>
 				<td>Event Duration</td>
@@ -883,14 +977,14 @@
 			<h2>Analysis</h2>
 			
 			<ul>
-				<li>The number of players who obtain the event SSR reward increases dramatically on the last day. <span class="text2">Only ~0.1% of players have the event SSR in the first two days of an event.</span></li>
-				<li>T4 (Top 5.0%) is the least competitive tier of the first five tiers. T4 (5%) and T5 (10%) mostly consist of players who've stopped playing shortly after reaching the 1.15mil milestone.</li>
-				<li>Reaching the SR reward milestone (700k Pts) guarantees a placement in the Top 20%.</li>
-				<li>The events considered the most competitive are: "Alex in Wonderland" [1], "The Stranger" [4]. <span class="text2">The Top 1% and 2% borders for "The Stranger" are unusually higher than average.</span></li>
-				<li>The events considered the least competitive are: "Campfire Bonds" [3] by far. There were a notable lack of supports compared to other events. <span class="text2">The bloomed Citron card is currently the rarest event card.</span></li>
-				<li>The number of players participating in events has decreased over time. Approximately half of the total number of players start on the 1st day of an event <span class="text2">(~6,400 players played within the 1st full day of the "Mystery" event [6])</span>. </li>
-				<li>The gap between the Top 20% and the Top 10% has shrunk, with the Top 20% being higher on average and the Top 10% being lower on average.</li>
-				<li>Overall, events that are more recent have been more competitive than before (i.e. The "Mystery" event [6] has numbers comparable to the "Sardines" event [2], but the "Sardines" event lasted an extra day).</li>
+				<li>The number of players who reach the event SSR milestone (1.15mil) increases dramatically on the last day. <span class="text2">Only ~0.1% of players have the event SSR in the first two days of an event.</span></li>
+				<li>Reaching the event SR milestone (700k Pts) currently guarantees a placement in the Top 20%.</li>
+				<li>The events considered <span class="rtxt">highly</span> competitive so far are: "Stranger" [4] and "Wonderland" [1], with borders comparable to each other taking event duration and recency into account, and then "Mystery" [6] and "Hot Springs" [5] overall slightly behind.</li>
+				<li>The T2 (1%) border for "The Stranger" is unusually higher than average.</li>
+				<li>The events considered <span class="gtxt">less</span> competitive so far are: "Campfire Bonds" [3] (by far), followed by "The Great Sardine Search" [2]. During the first seasonal event, there were a notable lack of supports compared to other events. <span class="text2">The bloomed Citron card is currently the rarest event card.</span></li>
+				<li>Over time, T3 (2.0%) and T6 (20%) have slightly higher borderlines on average despite events being a day shorter. The other tiers have stayed relatively the same.</li>
+				<li>T4 (Top 5.0%) is the least competitive tier out of the first five tiers. T4 (5%) and T5 (10%) mostly consist of players who have stopped playing shortly after reaching the 1.15mil milestone.</li>
+				<li>The number of players participating in events has decreased over time. An estimated number of players who start on the 1st day of an event is about 50-60% of the final participation total <span class="text2">(~6,400 players played within the 1st full day of the "Mystery" event [6])</span>. </li>
 			</ul>
 		</div>
 	
@@ -899,9 +993,9 @@
 	
 	
 	<div class="inner">
-	<a id="link" class="anchor"></a>
+	<a id="skills" class="anchor"></a>
 	
-		<div class="box">
+		<div class="box" style="overflow:auto;">
 	
 		<h2>Simplified Link Skills Table (Part 1 Only)</h2>
 		
@@ -1324,9 +1418,12 @@
 		
 		<p>The following 12% boost link skill combinations currently cannot be combined with any other link skills:</p>
 		<ul>
-			<li>Action: Kazunari + Azuma</li>
-			<li>Drama: Tenma + Yuki</li>
-			<li>Drama: Muku + Juza</li>
+			<li><div class="img_ac" style="width: 20px; 
+	display: inline-block;"></div> Kazunari + Azuma</li>
+			<li><div class="img_dr" style="width: 20px; 
+	display: inline-block;"></div> Tenma + Yuki</li>
+			<li><div class="img_dr" style="width: 20px; 
+	display: inline-block;"></div> Muku + Juza</li>
 		</ul>
 		
 		<p>If you're not familiar with the actors by name, the wiki guide has images.</p>
@@ -1342,6 +1439,102 @@
 	
 	
 	<div class="inner">
+	<a id="prizes" class="anchor"></a>
+	
+		<div class="box">
+			<h2>Event Prizes past 1.5mil Pts (1.6mil - 3.5mil)</h2>
+			
+			<table class="evt"><tr>
+				<td>Pts needed</td>
+				<td>Prize</td>
+				<td>Amount</td>
+				<tr><tr style="font-weight:bold">
+				<td>1,600,000</td>
+				<td>Limited Kame Box</td>
+				<td>x4</td>
+				<tr><tr style="font-weight:bold">
+				<td>1,700,000</td>
+				<td>Limited Bento</td>
+				<td>x2</td>
+				<tr><tr>
+				<td>1,800,000</td>
+				<td>Spring Buds</td>
+				<td>x5</td>
+				<tr><tr>
+				<td>1,900,000</td>
+				<td>Summer Buds</td>
+				<td>x5</td>
+				<tr><tr>
+				<td>2,000,000</td>
+				<td>Autumn Buds</td>
+				<td>x5</td>
+				<tr><tr>
+				<td>2,100,000</td>
+				<td>Winter Buds</td>
+				<td>x5</td>
+				<tr><tr style="font-weight:bold">
+				<td>2,200,000</td>
+				<td>Limited Kame Box</td>
+				<td>x2</td>
+				<tr><tr style="font-weight:bold">
+				<td>2,300,000</td>
+				<td>Limited Bento</td>
+				<td>x1</td>
+				<tr><tr>
+				<td>2,400,000</td>
+				<td>R Coach Card</td>
+				<td>x3</td>
+				<tr><tr>
+				<td>2,500,000</td>
+				<td>R Coach Card</td>
+				<td>x3</td>
+				<tr><tr>
+				<td>2,600,000</td>
+				<td>R Coach Card</td>
+				<td>x3</td>
+				<tr><tr style="font-weight:bold">
+				<td>2,700,000</td>
+				<td>Limited Kame Box</td>
+				<td>x2</td>
+				<tr><tr style="font-weight:bold">
+				<td>2,800,000</td>
+				<td>Limited Bento</td>
+				<td>x1</td>
+				<tr><tr>
+				<td>2,900,000</td>
+				<td>Spring Flowers</td>
+				<td>x4</td>
+				<tr><tr>
+				<td>3,000,000</td>
+				<td>Summer Flowers</td>
+				<td>x4</td>
+				<tr><tr>
+				<td>3,100,000</td>
+				<td>Autumn Flowers</td>
+				<td>x4</td>
+				<tr><tr>
+				<td>3,200,000</td>
+				<td>Winter Flowers</td>
+				<td>x4</td>
+				<tr><tr style="font-weight:bold">
+				<td>3,300,000</td>
+				<td>Limited Bento</td>
+				<td>x1</td>
+				<tr><tr>
+				<td>3,400,000</td>
+				<td>Supporting Actor Trophy</td>
+				<td>x3</td>
+				<tr><tr>
+				<td>3,500,000</td>
+				<td>Lead Actor Trophy</td>
+				<td>x3</td>
+			</tr></table>
+		</div>
+	</div>
+	
+	
+	
+	<div class="inner">
 	<a id="exp" class="anchor"></a>
 	
 		<div class="box">
@@ -1351,7 +1544,7 @@
 		<p>Here's my experience with the first competitive event I attempted to rank in. It was such a fun and enjoyable experience and I would love to rank again in the future. If you haven't ranked before, I would totally recommend trying it out!</p>
 		<p>Contains story spoilers for "The Stranger".</p>
 		
-		<textarea readonly rows="40" cols="100">
+		<textarea readonly rows="25">
 Feb 12 and 13 (Day 1 and 5 hours):
 HONEYMOON!
 OMG STRANGER IS AN AWESOME PLAY EVERYONE LOOKS COOL
@@ -1360,39 +1553,39 @@ TAICHI CHEERS OMI UP ;;
 OMI LOVED NACHI & CRAZY WOLF GANG, AND NOW HIS FELLOW TROUPE MEMBERS
 I NEED 4x SSR OMI TO GO WITH MY EXTRA SSR TAICHI
 I GOT ALL THE GACHA CARDS I AM MORE THAN READY!!!
-My ranking isn't as bad as I expected. 9.9% within the first 5 hours ("day" 1) then 3.0% on second day. Off to a good start!
+My ranking isn't as bad as I expected. 9.9% within the first 5 hours then 3.0% on second day. Off to a good start!
 
 Feb 14 (Day 2):
 @458,810 pts, spent 1 gem (3.0%)
-@523,610 spent 9 gems and all kame rewards obtained (1.5%)
-@647,869 = 34 gems, all but 1 kame box (1.1%)
+@523,610 9 gems total and all kame rewards obtained (1.5%)
+@647,869 = 34 gems total, all but 1 kame box (1.1%)
 Feb 15 (Day 3):
-@794,723 Pts = 52 gems, all kame (1.0%)
-@915,453 Pts = 70 gems, all kame (0.9-1.0%)
+@794,723 Pts = 52 gems total, all kame (1.0%)
+@915,453 Pts = 70 gems total, all kame (0.9-1.0%)
 Feb 16 (Day 4):
-@1,244,313 Pts = 90 gems, all kame (1.0% all day, 0.9% after getting Omi), 15 tickets, played all day
+@1,244,313 Pts = 90 gems total, all kame (1.0% all day, 0.9% after getting Omi), 15 tickets, played all day
 Feb 17 (Day 5):
-@1,493,321 Pts = 103 gems, all kame (0.8% fairly consistently, 0.7% by end of day), played all day
+@1,493,321 Pts = 103 gems total, all kame (0.8% fairly consistently, 0.7% by end of day), played all day
 
 After 5 days into the event, I feel like people are slowing down a bit from a lack of gems. On the 6th day I barely dropped % at all. I am contemplating whether to try to get into the 0.5%. The reward is 50 more gems and an extra copy of the SSR. I will definitely be spending more than 50 gems just to get in, and then more gems everyday just to stay there -- especially during the last two days of the event.
 Spending 50 gems at this point will help me reach the bottom of 0.5%, while an additional 100 gems will get me in 0.4%. I might think about doing a sneak attack closer to the end of the event, gauging how much the border grows first during those brutal last days. If it's really that crazy then I'll just focus on staying in Top 1.0% instead.
 
 Feb 18 (Day 6):
-@1,744,777 Pts = 122 gems, still have 3 kame boxes from the 1.6m reward. Trying to stay in 0.6% so that I have the opportunity to do a sneak attack on the final day. xD
+@1,744,777 Pts = 122 gems total, still have 3 kame boxes from the 1.6m reward. Trying to stay in 0.6% so that I have the opportunity to do a sneak attack on the final day. xD
 After 6 days of the event, the Top 0.5% border has already surpassed Campfire Bonds' final Top 0.5% border. At this rate it may even surpass Alex in Wonderland's.
 Feb 19 (Day 7):
-@1,979,236 = 130 gems, no kame :(
+@1,979,236 = 130 gems total, no kame :(
 
 Trying to keep steady in 0.6% close to the bottom of 0.5%, but not surpassing it... oops didn't mean to but did surpass it at one point due to a surprise encore. Now enjoying 0.5% at times :p idk if I should try to get into 0.4 and worry less about dropping out of T1. The gap for that is another ~24 gems worth of points...
-I think I have enough bentos for the rest of the event. Unless Matinee keeps showing up.
-I missed THREE frickin Encores for 3 SP now. You know what... just pay gems upfront and don't even wait anymore. SERIOUSLY ARRRRGGGHHH SO FRUSTRATING!!! >:(
+I think I have enough bento for the rest of the event. Unless Matinee keeps showing up.
+I missed THREE Encores for 3 SP now. You know what... just pay gems upfront and don't even wait anymore. SERIOUSLY ARRRRGGGHHH SO FRUSTRATING!!! >:(
 At this point you wish for the event to end...
 
 Feb 20 (Day 8):
-2,205,324 =143 gems + 2 kame reward. Did my attack into 0.4%/top of 0.5% starting today, taking advantage of the rank up LP, and try to maintain 0.5% (expect to drop a bit) on the last day.
+2,205,324 = 143 gems total + 2 kame reward. Did my attack into 0.4%/top of 0.5% starting today, taking advantage of the rank up LP, and try to maintain 0.5% (expect to drop a bit) on the last day.
 A total of 150 gems spent would be ideal since its the 0.5% reward prize :p But it's expected to become hectic in the last day so idk. Hoping not to spend over 200 gems.
 Feb 21 (Day 9):
-2,375,607 = 143gems, 1 kame
+2,375,607 = 143gems total, 1 kame
 
 I'm quite ahead now and am not worrying about my rank so much, which is a nice change of pace. Just gotta keep up the rank!
 Having some trouble sleeping the last two days tho ;; Hope to get some good sleep after it finally ends.
@@ -1403,7 +1596,7 @@ END ME
 I AM FORCING MYSELF TO STAY UP
 I AM DYING
 I ALSO FELL ASLEEP AND WASTED MY CAPPED LP AND SP from rank up AAAAHHH
-(At least I have 5 bentos - enough for the whole day)
+(At least I have 5 bento - enough for the whole day)
 The border is catching up faster and faster. Still confident I can stay in 0.5... barely.
 Geez I even used 2 SP on a Soiree bc I thought it was a Finale. I am so out of it right now. >< I still pop up on the bottom of 0.4% (even after all these mess ups) but that's bc the point gaps have become much closer, but I better pay attention for the rest of the day.
 I haven't done any Encores if it means spending even one gem. This event isn't getting any more of my gems ><
@@ -1419,32 +1612,33 @@ Luckily it looks like I'm just barely able to rank up one more time for some muc
 @9:30PM: 12 gem gap (0.5) 36k
 Ranked up...
 @10:50PM: 6 gem gap 19k while waiting for SP to refill... without that rank up I am forced to spend more gems :o
-@11:00PM: 4 gem gap 12k SH***T I NEED TO SPEND
+@11:00PM PST: 4 gem gap 12k SH***T I NEED TO SPEND
 @11:10PM: 6 gem gap 20k. Spent 5 gems. reached 2.6m Pts
 @11:25PM: 6 gem gap, 20k. Spent 7 gems
 @11:30PM: F*** I THINK IM DED. 2 gems 5k point gap... wut happened
 @11:45PM: 10 gem gap 30k. I think I'm ok... but frantically checking ranking every minute.
 @11:50PM: 6 gem gap, 18k. Didn't spend anything more or do practices, but have a finale ready just in case.
-@11:59PM: I AM EXACTLY ON THE BORDER HOLY MOLY!!! There's a gap of 6k Pts or so to the person below me...
+@11:59PM: I AM EXACTLY ON THE BORDER HOLY MOLY!!! The person below is about 6k pts away...?!
 *Waits the full 10 minutes of maintenance dreadfully*
-After maint: Right on the border. *Faints* I am never ranking again.
+After maint: 4x SSR Omi. *Faints* I am never ranking again.
 
-Post-event analysis: the gap was actually 6,842 Pts. A Finale gives 4,952 Pts without bonus Pts so 6,752 Pts with the two event reward cards, one copy of each bloomed ++ gacha card and SSR ++ guest support, so I -might- have been safe either way. ...unless the show was an Encore or if they somehow had five fully bloomed event cards. o.O
+Post-event analysis: the gap between me and the player below was actually 6,842 Pts. A Finale gives 4,952 Pts without bonus Pts so 6,752 Pts with the two event reward cards, one copy of each bloomed ++ gacha card and SSR ++ guest support, so I -might- have been safe either way. ...unless the show was an Encore or if they had five fully bloomed event cards. o.O
 		</textarea>
 		
-		<img height="240px" src="src/ss_02.png"></img>
+		<a href="src/ss_02.png"><img src="src/ss_02.png"></a><br>
+		<p><span class="text2">Why be on the front page when all you need is to be on is the borderline?</span></p><br>
 		
-		<p>Had the fully bloomed SSR and R card both with lead skill lv 10, an unbloomed SR, and an extra unbloomed SSR I could use for Action shows.</p><br>
+		<p>Had the fully bloomed SSR and R event cards both with lead skill lv 10, an unbloomed SR, and an extra unbloomed SSR I could use for Action shows.</p>
 		
-		<p>SP usage: Did Soirees for 1 SP (level 22 avg). 2 SP for every Finale. 4 SP for Co/Dr Encores, 3 SP for Ac Encores.</p>
-		
-		<p>Total gems spent to rank in T1: 164. Doesn't -seem- like a lot, but I spent a ton on the gacha so...</p>
-		
-		<p>I did not spend any gems to refill LP.</p>
-		
-		<p>Average Pts per day: 261,000. This is almost double my normal amount (135,000 without gacha cards or gems).</p>
-		
-		<p>Average support usage: 110 times per day.</p><br>
+		<ul>
+		<li>SP usage: Did Soirees for 1 SP (range: level 18 to 24. level 21/22 avg). 2 SP for every Finale. 4 SP for Co/Dr Encores, 3 SP for Ac Encores.</li>
+		<li>Total gems spent to rank in T1: 164. <span class="text2">Doesn't seem like a lot, but I played everyday and spent a ton on the gacha so...</span></li>
+		<li>If I didn't spend any gems on refills, I would have been in T3 (2%).</li>
+		<li>I did not spend any gems to refill LP.</li>
+		<li>Average Pts per day: 261,000. This is almost double my normal amount (135,000 without gacha cards or gems). My event cards gave me about 1.5x the normal amount of points, and the rest come from additional kame boxes/bento past 1.5mil.</li>
+		<li>Average support usage: 110 times per day.</li>
+		<li>I did get (some) sleep, but stayed up for the Bloodbath.</li>
+		</ul>
 		
 		<p>From this event, I learned that clowns really do exist. You thought one fully bloomed card of an actor was enough. No. These so-called "Itarus" try to obtain MULTIPLE FULLY BLOOMED gacha cards, even of the same actor. Their team would be for example one Taichi ++, two Juzas ++, and two Sakyos ++. This is the only way I can explain why some players could get past me in the ranks quicker than I had anticipated, because their bonus points reached 2,000+ per show compared to my average of ~1,350.</p>
 		
@@ -1462,8 +1656,8 @@ Post-event analysis: the gap was actually 6,842 Pts. A Finale gives 4,952 Pts wi
 		<h2>Source</h2>
 		<ul>
 		<li>A3! Act! Addict! Actors! is owned by LIBER Entertainment. Localization by CYBIRD.</li>
-		<li><a target="_blank" href="https://yaycupcake.com/a3/index.php?title=Main_Page">A3! Wiki</a></li>
-		<li><a target="_blank" href="https://www.reddit.com/r/A3ActorsInTraining/">A3! Subreddit</a></li>
+		<li><a href="https://yaycupcake.com/a3/index.php?title=Main_Page">A3! Wiki</a></li>
+		<li><a href="https://www.reddit.com/r/A3ActorsInTraining/">A3! Subreddit</a></li>
 		<li>Compiled by Misaki (/u/Misakisa)</li>
 		</ul>
 
@@ -1481,7 +1675,7 @@ Post-event analysis: the gap was actually 6,842 Pts. A Finale gives 4,952 Pts wi
 		<div class="box">
 		
 		<h2>Changelog</h2>
-		<p>Mar 25th, 2020 [Version 1.0]: Site launch.</p>
+		<p>March 27th, 2020 [Version 1.0]: Site launch.</p>
 		
 		</div>
 	
@@ -1496,11 +1690,11 @@ Post-event analysis: the gap was actually 6,842 Pts. A Finale gives 4,952 Pts wi
 	<div id="footer">
 	
 	<div style="float: right; text-align: right;">
-		<ul id="menu" class="inl">
-				<a href="#exp"><li><span style="font-size: 0.7em;">HOW 2 RANK AS F2P</span></li></a>
-				<a href="#source"><li>SOURCE</li></a>
+		<ul class="menu inl">
+				<a href="#exp" target="_self"><li><span style="font-size: 0.7em;">HOW 2 RANK AS F2P</span></li></a>
+				<a href="#source" target="_self"><li>SOURCE</li></a>
 				<li style="background:none; border: none;">
-					<select id="themeSelect" onchange="changeTheme()">
+					<select id="themeSelect" onchange="changeTheme(this.options[this.selectedIndex].value)">
 			<option value="theme1">Cool Theme</option>
 			<option value="theme2">Light Theme</option>
 					</select>
