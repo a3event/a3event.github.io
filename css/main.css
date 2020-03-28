@@ -21,7 +21,7 @@ hr {
 }
 
 img {
-	margin: 0 0 0 25px;
+	margin: 0;
 	border: none;
 	border-radius: 5px;
 	max-height: 240px;
@@ -35,12 +35,12 @@ h1, h2, h3, h4 {
 	letter-spacing: 1px;
 	margin: 0 0 0.25em 0.25em;
 	padding: 0.2em 0.2em 0 0;
-	white-space: nowrap;
 	text-transform: uppercase;
 }
 
 h1 {
 	line-height: 20px;
+	white-space: nowrap;
 }
 
 h2 {
@@ -63,7 +63,7 @@ h3, h4 {
 }
 
 h4 {
-	color: #85B;
+	color: #A5D;
 	font-size: 0.85em;
 	text-indent: 20px;
 	margin: 0;
@@ -75,6 +75,7 @@ h4 {
 	height: 45px;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 
 ul {
@@ -91,6 +92,7 @@ ul li {
 	padding: 0;
 	white-space: nowrap;
 	overflow: auto;
+	z-index: 2;
 }
 
 .menu li {
@@ -106,6 +108,8 @@ ul li {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	white-space: nowrap;
+	overflow: auto;
 }
 
 .dropdown {
@@ -128,6 +132,7 @@ ul li {
 	vertical-align: text-top;
 	text-align: center;
 	overflow: auto;
+	z-index: 10;
 }
 
 .dropdown-links ul {
@@ -137,9 +142,9 @@ ul li {
 }
 
 .dropdown-links li {
-	width: 110px;
+	width: 120px;
 	height: 20px;
-	margin: auto 0.1em;
+	margin: 0 0.1em 0 0;
 }
 
 .dropdown:hover {
@@ -180,7 +185,10 @@ table.evt {
 table.evt td {
 	text-align: center;
 	vertical-align: text-top;
-	min-width: 80px;
+}
+
+table.evt1 td {
+	min-width: 90px;
 }
 
 table.evt2 {
@@ -192,8 +200,40 @@ table.evt2 td {
 	width: 130px;
 }
 
-table.evt3 td {
-	min-width: 50px;
+table.evt3 td, table.evt4 td {
+	min-width: 60px;
+}
+
+table.evt4 {
+	display: inline-block;
+}
+
+table.evt5 td {
+	white-space: nowrap;
+	height: 20px;
+}
+
+table.evt5 tr td:nth-child(1) {
+	min-width: 110px;
+	max-width: 110px;
+	overflow: auto;
+}
+
+table.evt5 td:nth-of-type(1) ~ td {
+	min-width: 260px;
+	max-width: 260px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.filter {
+	margin: 0.2em;
+	padding: 1em 3em;
+	background-color:rgba(150,150,180,0.3);
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .rtxt {
@@ -208,6 +248,10 @@ table.evt3 td {
 	color: #0D4;
 }
 
+.co, .ac, .dr {
+	padding: 0.1em;
+}
+
 .co {
 	background-color: #FB3;
 }
@@ -218,6 +262,18 @@ table.evt3 td {
 
 .dr {
 	background-color: #06F;
+}
+
+.co_empty {
+	background-color:rgba(255,187,51,0.3);
+}
+
+.ac_empty {
+	background-color:rgba(255,51,0,0.3);
+}
+
+.dr_empty {
+	background-color:rgba(0,102,255,0.3);
 }
 
 .trsp {
@@ -263,30 +319,53 @@ table.evt3 td {
 
 .gacha_ssr, .gacha_sr, .free_ssr, .free_sr {
 	text-align: left !important;
-	font-size: 0.95em;
+	font-size: 0.90em;
 }
 
 .gacha_ssr {
 	background-color: #900;
+	color: #DDD;
 }
 
 .gacha_sr {
 	background-color: #A27;
+	color: #DDD;
 }
 
 .free_ssr {
-	background-color: #6EB;
+	background-color: #1E8;
 	color: #222;
 }
 
 .free_sr {
-	background-color: #9CD;
+	background-color: #9ED;
 	color: #222;
+}
+
+.ssr, .sr {
+	text-shadow: 2px 2px 2px #333;
+	margin: 0 0.2em;
+	padding: 0 0.2em;
+}
+
+.ssr {
+	color: #F1A;
+	background-color: #06F;
+	border: 2px outset #06F;
+	border-radius: 5px;
+}
+
+.sr {
+	color: #FD4;
+	background-color: #D91;
+	border: 2px outset #D91;
+	border-radius: 5px;
 }
 
 .future {
 	font-style: italic;
 	font-family: Georgia, serif;
+	font-size: 0.85em;
 }
 
 select {
@@ -297,8 +376,9 @@ select {
 #container {
 	height: 80vh;
 	overflow: hidden;
-	margin-top: 4em;
-	left: 0;
+	border-radius: 5px;
+	margin-top: 3.2em;
+	padding: 0;
 }
 
 .inner {
@@ -310,7 +390,8 @@ select {
 .anchor {
 	display: block;
 	position: relative;
-	top: 2px;
+	margin: 0;
+	top: 0;
 	visibility: hidden;
 }
 
@@ -349,9 +430,18 @@ input {
 		max-height: 180px;
 	}
 	
+	img.ss {
+		width: 90vw;
+	}
+	
 	#container {
-		height: 75vh;
-		margin-top: 4.5em;
+		height: 80vh;
+		margin-top: 3.5em;
+	}
+
+	table.evt5 td:nth-of-type(1) ~ td {
+		min-width: 160px;
+		max-width: 160px;
 	}
 	
 	#footer {

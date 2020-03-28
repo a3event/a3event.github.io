@@ -33,7 +33,7 @@ h2::first-letter {
 }
 
 #header {
-	background-color: #FEE;
+	background-color: #FDF;
 }
 
 .menu {
@@ -50,7 +50,8 @@ h2::first-letter {
 }
 
 .dropdown-menu {
-	background-color: #E8C;
+	background-color: #F9D;
+	box-shadow: 10px 10px 10px #F6B inset;
 }
 
 .dropdown:hover {
@@ -65,6 +66,10 @@ h2::first-letter {
 
 .dropdown-links li:hover {
 	background-color:#F5C;
+}
+
+#container {
+	border: 2px solid #FFF;
 }
 
 .inner {
@@ -91,8 +96,12 @@ table.evt td {
 	border: 1px dotted #6AD;
 }
 
-.co, .ac, .dr {
+.co, .ac {
 	color: #111;
+}
+
+.dr {
+	color: #CCC;
 }
 
 .gray1 {
