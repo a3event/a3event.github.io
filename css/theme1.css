@@ -48,6 +48,7 @@ h2::first-letter {
 
 .dropdown-menu {
 	background-color: #503;
+	box-shadow: 10px 10px 10px #709 inset;
 }
 
 .dropdown:hover {
@@ -61,6 +62,10 @@ h2::first-letter {
 
 .dropdown-links li:hover {
 	background-color:#F5C;
+}
+
+#container {
+	border: 2px solid #111;
 }
 
 .inner {
