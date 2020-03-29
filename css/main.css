@@ -79,7 +79,7 @@ h4 {
 }
 
 ul {
-	list-style-image: url("https://a3event.github.io/gem.png");
+	list-style-image: url("https://a3event.github.io/src/gem.png");
 }
 
 ul li {
@@ -317,22 +317,22 @@ input[type="checkbox"]:checked + label {
 }
 
 .trsp {
-	background: #F67 url("https://a3event.github.io/spring.png") 2%/15px no-repeat;
+	background: #F67 url("https://a3event.github.io/src/spring.png") 2%/15px no-repeat;
 	color: #222;
 }
 
 .trsm {
-	background: #FA3 url("https://a3event.github.io/summer.png") 2%/15px no-repeat;
+	background: #FA3 url("https://a3event.github.io/src/summer.png") 2%/15px no-repeat;
 	color: #222;
 }
 
 .trat {
-	background: #F72 url("https://a3event.github.io/autumn.png") 2%/15px no-repeat;
+	background: #F72 url("https://a3event.github.io/src/autumn.png") 2%/15px no-repeat;
 	color: #222;
 }
 
 .trwt {
-	background: #3AE url("https://a3event.github.io/winter.png") 2%/15px no-repeat;
+	background: #3AE url("https://a3event.github.io/src/winter.png") 2%/15px no-repeat;
 	color: #222;
 }
 
@@ -341,15 +341,15 @@ input[type="checkbox"]:checked + label {
 }
 
 .img_co {
-	background: #FB3 url("https://a3event.github.io/comedy.png") 50%/20px no-repeat;
+	background: #FB3 url("https://a3event.github.io/src/comedy.png") 50%/20px no-repeat;
 }
 
 .img_ac {
-	background: #F30 url("https://a3event.github.io/action.png") 50%/20px no-repeat;
+	background: #F30 url("https://a3event.github.io/src/action.png") 50%/20px no-repeat;
 }
 
 .img_dr {
-	background: #06F url("https://a3event.github.io/drama.png") 50%/20px no-repeat;
+	background: #06F url("https://a3event.github.io/src/drama.png") 50%/20px no-repeat;
 }
 
 .downarrow {
