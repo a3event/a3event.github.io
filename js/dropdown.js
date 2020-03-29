@@ -179,10 +179,10 @@ function filterCards(id) {
 function changeTheme(t) {
 	
 	if (t == "theme1") {
-		document.getElementById('theme_css').href = 'C:/Users/Ruby/Documents/T/css/theme1.css';
+		document.getElementById('theme_css').href = 'https://a3event.github.io/css/theme1.css';
 	}
 	else {
-		document.getElementById('theme_css').href = 'C:/Users/Ruby/Documents/T/css/theme2.css';
+		document.getElementById('theme_css').href = 'https://a3event.github.io/css/theme2.css';
 	}
 	
 	localStorage.setItem("userTheme", t);
