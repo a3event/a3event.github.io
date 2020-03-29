@@ -8,7 +8,7 @@ Implemented tools:
 
 • card filter by gacha, filter, release status
 
-Unimplemented features that may be add in the future:
+Unimplemented features that may be added in the future:
 
 • points calculator
 
