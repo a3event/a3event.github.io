@@ -18,7 +18,6 @@ $( document ).ready(function() {
 	showFree = document.getElementById("show_free");
 	showSSR = document.getElementById("show_ssr");
 	showSR = document.getElementById("show_sr");
-	showFuture = document.getElementById("show_future");
 	
 });
 
