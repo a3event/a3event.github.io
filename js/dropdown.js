@@ -45,13 +45,97 @@ function filterSkills() {
 	localStorage.setItem("actor2", actor2);
 }
 
+function filterCards(id) {
+	
+	var checkBox = document.getElementById(id);
+	var table = $('table.evt5 td');
+	
+	//Unique classes: hide_gacha, hide_free, hide_ssr, hide_sr
+	
+	if (id == "show_gacha") {
+		if (checkBox.checked == false){
+			for(var i=0; i<table.length; i++){
+				if(table[i].classList.contains('gacha_ssr') || table[i].classList.contains('gacha_sr')){
+					table.eq(i).css('visibility', 'hidden');
+					table[i].classList.add("hide_gacha");
+				}
+			}
+		}
+		else {
+			for(var i=0; i<table.length; i++){
+				if(table[i].classList.contains('gacha_ssr') || table[i].classList.contains('gacha_sr')){
+					table.eq(i).css('visibility', 'visible');
+					table[i].classList.remove("hide_gacha");
+				}
+			}
+			filterCards("show_ssr");
+			filterCards("show_sr");
+		}
+	}
+	
+	if (id == "show_free") {
+		if (checkBox.checked == false){
+			for(var i=0; i<table.length; i++){
+				if(table[i].classList.contains('free_ssr') || table[i].classList.contains('free_sr')){
+					table.eq(i).css('visibility', 'hidden');
+					table[i].classList.add("hide_free");
+				}
+			}
+		}
+		else {
+			for(var i=0; i<table.length; i++){
+				if(table[i].classList.contains('free_ssr') || table[i].classList.contains('free_sr')){
+					table.eq(i).css('visibility', 'visible');
+					table[i].classList.remove("hide_free");
+				}
+			}
+			filterCards("show_ssr");
+			filterCards("show_sr");
+		}
+	}
+	
+	if (id == "show_ssr") {
+		if (checkBox.checked == false){
+			for(var i=0; i<table.length; i++){
+				if(table[i].classList.contains('gacha_ssr') || table[i].classList.contains('free_ssr')){
+					table.eq(i).css('visibility', 'hidden');
+				}
+			}
+		}
+		else {
+			for(var i=0; i<table.length; i++){
+				if((table[i].classList.contains('gacha_ssr') || table[i].classList.contains('free_ssr')) && !(table[i].classList.contains('hide_gacha')) && !(table[i].classList.contains('hide_free'))){
+					table.eq(i).css('visibility', 'visible');
+				}
+			}
+		}
+	}
+	
+	if (id == "show_sr") {
+		if (checkBox.checked == false){
+			for(var i=0; i<table.length; i++){
+				if(table[i].classList.contains('gacha_sr') || table[i].classList.contains('free_sr')){
+					table.eq(i).css('visibility', 'hidden');
+				}
+			}
+		}
+		else {
+			for(var i=0; i<table.length; i++){
+				if((table[i].classList.contains('gacha_sr') || table[i].classList.contains('free_sr')) && !(table[i].classList.contains('hide_gacha')) && !(table[i].classList.contains('hide_free'))){
+					table.eq(i).css('visibility', 'visible');
+				}
+			}
+		}
+	}
+}
+
 function changeTheme(t) {
 	
 	if (t == "theme1") {
-		document.getElementById('theme_css').href = 'https://a3event.github.io/css/theme1.css';
+		document.getElementById('theme_css').href = 'C:/Users/Ruby/Documents/T/css/theme1.css';
 	}
 	else {
-		document.getElementById('theme_css').href = 'https://a3event.github.io/css/theme2.css';
+		document.getElementById('theme_css').href = 'C:/Users/Ruby/Documents/T/css/theme2.css';
 	}
 	
 	localStorage.setItem("userTheme", t);
