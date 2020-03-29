@@ -13,7 +13,7 @@ body {
 p {
 	text-indent: 20px;
 	margin: 0 5px 0 5px;
-	line-height: 18px;
+	line-height: 20px;
 }
 
 hr {
@@ -78,12 +78,18 @@ h4 {
 	z-index: 1;
 }
 
-ul {
+ul li {
 	list-style-image: url("https://a3event.github.io/src/gem.png");
+	line-height: 20px;
 }
 
-ul li {
-	line-height: 18px;
+ul.ul_b li {
+	list-style: none;
+	background: transparent url("https://a3event.github.io/src/bonus.png");
+	background-size: 16px;
+	background-repeat: no-repeat;
+	margin-left: -25px;
+	padding: 0 0 0 25px;
 }
 
 .menu {
@@ -261,7 +267,7 @@ table.evt5 td:nth-of-type(1) ~ td {
 .filter td {
 	background-color:rgba(0,0,0,0.4);
 	color: #DDD;
-	padding: 0.1em;
+	padding: 0.2em;
 }
 
 input[type="checkbox"] {
@@ -482,6 +488,10 @@ input {
 	table.evt5 td:nth-of-type(1) ~ td {
 		min-width: 190px;
 		max-width: 190px;
+	}
+	
+	.filter {
+		padding: 0.5em;
 	}
 	
 	#footer {
