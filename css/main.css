@@ -175,6 +175,17 @@ span.text2 {
 	color: #66F;
 }
 
+table.pros {
+	border-collapse: collapse;
+	border-style: hidden;
+	margin: 0.5em auto;
+}
+
+table.pros td {
+	border: 1px dotted #999;
+	vertical-align: text-top;
+}
+
 table.evt {
 	border-collapse: separate;
 	border-spacing: 2px;
@@ -208,6 +219,13 @@ table.evt4 {
 	display: inline-block;
 }
 
+#rgb_contain {
+	height: 70vh;
+	max-width: 910px;
+	overflow: auto;
+	background: linear-gradient(90deg, transparent 5%, rgba(255,187,51,0.4) 30%, rgba(255,51,0,0.4) 55%, rgba(0,102,255,0.4) 80%, transparent 105%); background-attachment: local;
+}
+
 table.evt5 td {
 	white-space: nowrap;
 	height: 20px;
@@ -220,8 +238,8 @@ table.evt5 tr td:nth-child(1) {
 }
 
 table.evt5 td:nth-of-type(1) ~ td {
-	min-width: 260px;
-	max-width: 260px;
+	min-width: 250px;
+	max-width: 250px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -229,15 +247,33 @@ table.evt5 td:nth-of-type(1) ~ td {
 
 .filter {
 	margin: 0.2em;
-	padding: 1em 3em;
+	padding: 0.5em 2.5em;
 	background-color:rgba(150,150,180,0.3);
 	border-radius: 5px;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.rtxt {
+.filter td {
+	background-color:rgba(0,0,0,0.4);
+	color: #DDD;
+	padding: 0.1em;
+}
+
+input[type="checkbox"] {
+	background-color:#F00;
+}
+
+input[type="checkbox"] + label {
 	color: #D40;
+}
+
+input[type="checkbox"]:checked + label {
+	color: #0D4;
+}
+
+.rtxt {
+	color: #C50;
 }
 
 .ytxt {
@@ -245,7 +281,7 @@ table.evt5 td:nth-of-type(1) ~ td {
 }
 
 .gtxt {
-	color: #0D4;
+	color: #0C5;
 }
 
 .co, .ac, .dr {
@@ -374,7 +410,7 @@ select {
 }
 
 #container {
-	height: 80vh;
+	height: 85vh;
 	overflow: hidden;
 	border-radius: 5px;
 	margin-top: 3.2em;
@@ -440,8 +476,8 @@ input {
 	}
 
 	table.evt5 td:nth-of-type(1) ~ td {
-		min-width: 160px;
-		max-width: 160px;
+		min-width: 190px;
+		max-width: 190px;
 	}
 	
 	#footer {
