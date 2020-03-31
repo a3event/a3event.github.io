@@ -28,7 +28,7 @@
 			<div class="dropdown">
 				EVENT <img src="src/favicon.ico" height="15px">
 				<div class="dropdown-links">
-				<ul class="menu">
+				<ul>
 					<a href="#guide" target="_self"><li>EVENT GUIDE</li></a>
 					<a href="#skills" target="_self"><li>LINK SKILLS</li></a>
 					<a href="#border" target="_self"><li>PTS BORDERS</li></a>
@@ -40,7 +40,7 @@
 			<div class="dropdown">
 				F2P TIPS <img src="src/favicon.ico" height="15px">
 				<div class="dropdown-links">
-				<ul class="menu">
+				<ul>
 					<a href="#gems" target="_self"><li>FREE GEMS</li></a>
 					<a href="#roster" target="_self"><li>FREE CARDS</li></a>
 				</ul>
@@ -50,11 +50,18 @@
 			<div class="dropdown">
 				OTHER <img src="src/favicon.ico" height="15px">
 				<div class="dropdown-links">
-				<ul class="menu">
+				<ul>
 					<a href="#exp" target="_self"><li><span style="font-size: 0.7em;">HOW 2 RANK AS F2P</span></li></a>
 					<a href="#source" target="_self"><li>SOURCE</li></a>
 				</ul>
 				</div>
+			</div>
+			
+			<div class="dropdown">
+				<select id="themeSelect" onchange="changeTheme(this.options[this.selectedIndex].value)">
+					<option value="theme1">Cool Theme</option>
+					<option value="theme2">Light Theme</option>
+				</select>
 			</div>
 		
 		</div>
@@ -441,7 +448,7 @@
 	<p>App notifications can be turned on to tell you when your SP is full.</p><br>
 
 	<h4>OPTIMIZATION:</h4>
-	<p>I would shorten the wait time to 1 hour and 30 minutes max, so that there are still 10 minutes to do event practices in case Matinees keep showing up (and thus "wasting" the timer for the next SP regen).</p>
+	<p>I would shorten the wait time to 1 hour and 30 minutes max, so that there are still 10 minutes to do event practices in case Matinees keep showing up (and you won't "waste" the timer for the next SP regen).</p>
 	<p>Set an alarm or write down the time for when you should check the app again. And no need to stress if you come back to a full SP bar.</p>
 	<p>While you are waiting for SP to regen, keep your LP at 30 less than the max cap (170/200 for Rank 100+). Waiting 1h and 30m means your LP will regen by 30, enough for two event practices.</p>
 
@@ -498,7 +505,7 @@
 	<p>Only do Finales for 3 SP if your SP is full or close to being refilled.</p>
 	
 	<h4>VARIATION:</h4>
-	<p>You can also do 1 SP Soirees to have more chances of Encore appearing. If you had a full 5/5 SP bar and the Encore needs 4 SP, you can spend all of your SP at once!</p>
+	<p>You can also do 1 SP Soirees to have more chances of Encores appearing. If you had a full 5/5 SP bar and the Encore needs 4 SP, you can spend all of your SP at once!</p>
 	
 	<h4>ZERO GEMS:</h4>
 	<p>It's possible to obtain the SSR reward (1.15mil Pts) after playing constantly for 8 days, and still get 8 hours of sleep.</p>
@@ -587,7 +594,7 @@
 	<td><span class="t1t2">T1 T2</span> <span class="t3">T3</span><br>Top 0.5% - 2.0%</td>
 	</tr><tr>
 	<td>F2P-Friendly:</td>
-	<td class="ytxt">Depends</td>
+	<td class="gtxt">Yes</td>
 	</tr><tr>
 	<td>Beginner-Friendly:</td>
 	<td class="rtxt">No</td>
@@ -745,13 +752,13 @@
 		<p>After reaching Rank 100+ with your legendary actor management skills, you've reached the endgame of A3! <span class="text2">where we all suffer in endless event hell</span> -- or as I like to call it, a "gem management" game. These shiny red diamonds are the limited resource for pulling the gacha and for ranking, besides shelling out for premium gems with real money.</p><br>
 		
 		<img src="src/ss_01.png">
-		<p>Free gems have little restrictions. The only things exclusive to premium gems are the infrequent 1-time "Special Actor Tryouts" that either guarantee you a SSR, offers like the "Start Dash Tryouts" <span class="text2">(there may be more in the future)</span> that allow you to choose a card of your liking, and a daily pull on Premium Tryouts for a discount. Neither are a necessity to progress.</p>
+		<p>Free gems have little restrictions. The only things exclusive to premium gems are the infrequent 1-time "Special Actor Tryouts" that guarantee you a SSR, the "Start Dash Tryouts" <span class="text2">(such as the one for new players)</span> that allows you to choose a card of your liking, and the daily pull on Premium Tryouts for a discount. None of these are a necessity to progress.</p>
 		<p>Saving gems takes willpower, but it's not impossible!</p>
 		<ul>
 			<li>Don't pull on every banner.
 				<ul>
 				<li>You could ignore banners that don't have an event attached to them, as there is currently no guaranteed "pity system" implemented.</li>
-				<li>Choose only a few actors ("best boys") to pull for. You could ignore banners that don't feature your best boy(s) as the SSR/SR. <span class="text2">Sometimes, I ignore the featured SR of one of my best boys too if I don't care for the featured SSR(s).</span></li>
+				<li>Choose only a few actors ("best boys") to pull for. You could even ignore SRs and pull only for the SSRs. <span class="text2">I ignore the featured SR of one of my best boys if I don't care for the featured SSR(s).</span></li>
 				<li>You could ignore a banner if you already own an actor's SSR card of the same attribute as the featured SSR. <span class="text2">(See: <a href="#roster" target="_self">Actor Management</a>)</span></li>
 				</ul>
 			</li>
@@ -763,7 +770,7 @@
 			</li>
 			<li>Don't attempt to rank (Top 0.5% - Top 2%) in every event.
 				<ul>
-				<li>F2P have limited gems and cannot expect to obtain all of the event SSRs fully bloomed without going broke. You do not <span class="text2">need</span> fully bloomed SSRs.</li>
+				<li>F2P have limited gems and cannot expect to obtain all of the event SSRs fully bloomed while still having gems left for the gacha. You do not <span class="text2">need</span> fully bloomed SSRs.</li>
 				<li>It's possible to obtain the event SSR reward (1.15mil Pts) and tier as high as T4 (Top 5%) without spending a single gem. Keep the amount of gems spent minimal for events if you're not ranking (0-20 gems).</li>
 				<li>Rank badges are for the "Itarus" and have no purpose outside of aesthetics and bragging rights. They reward 10 Premium Tokens (5 more than the other tiers) which aren't worth the additional gems spent to obtain them. <span class="text2">(You can only show off a maximum of two badges on your profile anyway...)</span></li>
 				</ul>
@@ -782,7 +789,7 @@
 		<p>Premium tokens are a currency comparable to that of gems. They are considered to be worth more than a single pull (15 gems) but aren't nearly worth more than one multi-pull (145 gems).</p>
 		<p>They are currently obtainable from ranking up and from event rewards.</p>
 		<p>They can only be used for Premium Tryouts and the upcoming Birthday Tryouts <span class="text2">(predicted to start in June 2020)</span>.</p>
-		<p>Use 5 tokens to do a single pull equivalent to the last pull (guaranteed SR or higher) of a multi-pull.</p>
+		<p>5 tokens give a single pull equivalent to the last pull of a multi-pull (guaranteed SR or higher).</p>
 		<ul>
 			<li>Beginners should pull on a banner several times and/or use their tokens for some much-needed SRs and SSRs. Once you have a decent amount of initial cards and no longer  rely on R cards, save your remaining tokens for the Birthday Tryouts.</li>
 		</ul>
@@ -1429,9 +1436,11 @@
 	<div class="inner">
 	<a id="border" class="anchor"></a>
 	
-		<div class="box" style="overflow:auto;">
+		<div class="box">
 		
 			<h2>Final point borders of previous events (T1 - T6)</h2>
+		
+			<div style="overflow:auto;">
 			
 			<table class="evt evt1">
 			<colgroup>
@@ -1543,6 +1552,7 @@
 				<td>~11,300</td>
 			</tr>
 			</table>
+			</div>
 			
 		</div>
 		
@@ -2272,21 +2282,15 @@ Post-event analysis: the gap between me and the player below was actually 6,842 
 	
 	</div>
 	
+	<hr>
+	
 	
 	
 	<div id="footer">
 	
-	<div style="float: right; text-align: right;">
-		<ul class="menu inl">
-				<li style="background:none; border: none;">
-					<select id="themeSelect" onchange="changeTheme(this.options[this.selectedIndex].value)">
-			<option value="theme1">Cool Theme</option>
-			<option value="theme2">Light Theme</option>
-					</select>
-			</li>
-		</ul>		
+	<div style="float: right; text-align: right;">	
 		
-		<span style="float:right; font-size: 0.7em">May Sakuya bless our gacha luck~<img src="src/favicon.ico" height="10px"></span>
+		<span id="smalltext">May Sakuya bless your gacha luck~<img src="src/favicon.ico" height="10px"></span>
 	</div>
 	
 	</div>
@@ -2294,8 +2298,6 @@ Post-event analysis: the gap between me and the player below was actually 6,842 
 	
 	
 	</div>
-	
-	<hr>
 
 </body>
 

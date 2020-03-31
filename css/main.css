@@ -3,11 +3,15 @@ body {
 	font-family: Tahoma;
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 
 #main {
 	max-width: 1200px;
 	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
 }
 
 p {
@@ -22,7 +26,6 @@ hr {
 
 img {
 	margin: 0;
-	border: none;
 	border-radius: 5px;
 	max-height: 240px;
 	max-width: 500px;
@@ -41,6 +44,7 @@ h1, h2, h3, h4 {
 h1 {
 	line-height: 20px;
 	white-space: nowrap;
+	overflow: hidden;
 }
 
 h2 {
@@ -69,15 +73,6 @@ h4 {
 	margin: 0;
 }
 
-#header {
-	position: fixed;
-	width: 100%;
-	height: 45px;
-	top: 0;
-	left: 0;
-	z-index: 1;
-}
-
 ul li {
 	list-style-image: url("https://a3event.github.io/src/gem.png");
 	line-height: 20px;
@@ -92,28 +87,18 @@ ul.ul_b li {
 	padding: 0 0 0 25px;
 }
 
-.menu {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	white-space: nowrap;
-	overflow: auto;
-	z-index: 2;
-}
-
-.menu li {
-	border-radius: 5px;
-	display: inline-block;
-	width: 120px;
-	height: 20px;
-	vertical-align: text-top;
-	text-align: center;
+#header {
+	/*
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	*/
+	flex: 0 1 auto;
+	z-index: 1;
 }
 
 .dropdown-menu {
-	margin: 0;
-	padding: 0;
-	width: 100%;
 	white-space: nowrap;
 	overflow: auto;
 }
@@ -122,35 +107,34 @@ ul.ul_b li {
 	margin: auto 0.3em;
 	padding: 0;
 	width: 90px;
-	height: 15px;
-	white-space: nowrap;
+	height: 22px;
 	display: inline-block;
 }
 
 .dropdown-links {
 	display: none;
 	position: absolute;
+	width: auto;
 	left: 0;
-	margin-top: 17px;
-	padding: 0;
 	border-radius: 5px;
-	width: 100%;
-	vertical-align: text-top;
-	text-align: center;
+	margin-top: 21px;
+	padding: 0 5px 0 0;
 	overflow: auto;
-	z-index: 10;
+	z-index: 3;
 }
 
 .dropdown-links ul {
-	float: left;
-	white-space: nowrap;
-	display: inline-block;
+	margin: 0 0 0 -35px;
+	z-index: 2;
 }
 
 .dropdown-links li {
+	border-radius: 5px;
+	display: inline-block;
 	width: 120px;
-	height: 20px;
-	margin: 0 0.1em 0 0;
+	height: 25px;
+	text-align: center;
+	vertical-align: text-bottom;
 }
 
 .dropdown:hover {
@@ -158,7 +142,7 @@ ul.ul_b li {
 }
 
 .dropdown:hover .dropdown-links {
-	display: inline;
+	display: inline-block;
 }
 
 .dropdown-links li:hover {
@@ -197,6 +181,7 @@ table.evt {
 	border-spacing: 2px;
 	border-radius: 5px;
 	font-size: 0.9em;
+	height: auto;
 }
 
 table.evt td {
@@ -423,13 +408,16 @@ select {
 	height: 85vh;
 	overflow: hidden;
 	border-radius: 5px;
-	margin-top: 3.2em;
+	/*margin-top: 3.5em;*/
 	padding: 0;
 }
 
 .inner {
 	height: 100%;
 	padding: 0em;
+	display: flex;
+	flex-flow: column;
+	flex: 1 1 auto;
 	overflow: auto;
 }
 
@@ -450,28 +438,44 @@ textarea {
 #footer {
 	padding: 0.2em;
 	position: fixed;
-	height: 20px;
+	height: 15px;
 	bottom: 0;
 	right: 0;
 }
 
+#smalltext {
+	float: right;
+	font-size: 0.7em;
+}
+
 ul.inl {
-	display: inline-block;
+	background: transparent;
 }
 
 input {
 	background-color: #BDF;
 }
 
-@media screen and (max-width: 465px){
+@media screen and (max-width: 595px){
+	.dropdown-links {
+		width: 105%;
+	}
+	
+	#footer {
+		display: none;
+	}
+}
 
+@media screen and (max-width: 480px){
 	body {
 		font-size: 0.9em;
 	}
 
 	h1 {
-		font-size: 1.1em;
+		font-size: 1em;
+		letter-spacing: 0px;
 	}
+	
 	img {
 		max-height: 180px;
 	}
@@ -482,7 +486,7 @@ input {
 	
 	#container {
 		height: 80vh;
-		margin-top: 3.5em;
+		/*margin-top: 3.75em;*/
 	}
 
 	table.evt5 td:nth-of-type(1) ~ td {
@@ -492,13 +496,5 @@ input {
 	
 	.filter {
 		padding: 0.5em;
-	}
-	
-	#footer {
-		height: auto;
-	}
-	
-	ul.inl {
-		display: block;
 	}
 }

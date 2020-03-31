@@ -16,8 +16,8 @@ a:active {
 }
 
 hr {
-	background-color: #F09;
-	border: 1px dotted #FAD;
+	background-color: #FAD;
+	border: 1px dotted #F09;
 }
 
 h1, h2, h3, h4 {
@@ -36,19 +36,6 @@ h2::first-letter {
 	background-color: #FDF;
 }
 
-.menu {
-	background-color: #DBD;
-}
-
-.menu li {
-	background-color: #FBD;
-	border: 1px dotted #FEF;
-}
-
-.menu li:hover {
-	background-color: #F7D;
-}
-
 .dropdown-menu {
 	background-color: #F9D;
 	box-shadow: 10px 10px 10px #F6B inset;
@@ -56,16 +43,21 @@ h2::first-letter {
 
 .dropdown:hover {
 	color: #A07;
-	font-weight: bold;
 }
 
 .dropdown-links {
 	background-color: #DBD;
+	border-right: 1px dotted #F09;
+	border-bottom: 1px dotted #F09;
+}
+
+.dropdown-links li {
+	background-color: #FBD;
 	border: 1px dotted #FEF;
 }
 
 .dropdown-links li:hover {
-	background-color:#F5C;
+	background-color: #F9D;
 }
 
 #container {

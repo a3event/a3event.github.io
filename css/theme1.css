@@ -16,8 +16,8 @@ a:active {
 }
 
 hr {
-	background-color: #B6B;
-	border: 1px dotted #904;
+	background-color: #904;
+	border: 1px dotted #B6B;
 }
 
 h1, h2, h3, h4 {
@@ -36,16 +36,6 @@ h2::first-letter {
 	background-color: #904;
 }
 
-
-.menu li {
-	background-color: #614;
-	border: 1px dotted #FEF;
-}
-
-.menu li:hover {
-	background-color:#F5C;
-}
-
 .dropdown-menu {
 	background-color: #503;
 	box-shadow: 10px 10px 10px #709 inset;
@@ -56,12 +46,18 @@ h2::first-letter {
 }
 
 .dropdown-links {
-	background-color: #614;
+	background-color: #403;
+	border-right: 1px dotted #B6B;
+	border-bottom: 1px dotted #B6B;
+}
+
+.dropdown-links li {
+	background-color: #705;
 	border: 1px dotted #FEF;
 }
 
 .dropdown-links li:hover {
-	background-color:#F5C;
+	background-color: #F5C;
 }
 
 #container {
