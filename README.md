@@ -1,4 +1,4 @@
-# [A3!] Act! Actors! Addict! : Advanced Fan Guide for EN Server
+# [A3! Act! Actors! Addict!] EN: In-Depth Event/F2P Guide
 
 An in-depth event guide and tips for F2P.
 
