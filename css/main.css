@@ -7,7 +7,6 @@ body {
 }
 
 #main {
-	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
 	flex-flow: column;
@@ -88,12 +87,6 @@ ul.ul_b li {
 }
 
 #header {
-	/*
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	*/
 	flex: 0 1 auto;
 	z-index: 1;
 }
@@ -114,17 +107,16 @@ ul.ul_b li {
 .dropdown-links {
 	display: none;
 	position: absolute;
-	width: auto;
-	left: 0;
 	border-radius: 5px;
+	left: 0;
 	margin-top: 21px;
-	padding: 0 5px 0 0;
+	min-width: 300px;
 	overflow: auto;
 	z-index: 3;
 }
 
 .dropdown-links ul {
-	margin: 0 0 0 -35px;
+	margin: 0 0 0 -38px;
 	z-index: 2;
 }
 
@@ -190,7 +182,7 @@ table.evt td {
 }
 
 table.evt1 td {
-	min-width: 90px;
+	min-width: 100px;
 }
 
 table.evt2 {
@@ -408,13 +400,12 @@ select {
 	height: 85vh;
 	overflow: hidden;
 	border-radius: 5px;
-	/*margin-top: 3.5em;*/
 	padding: 0;
 }
 
 .inner {
 	height: 100%;
-	padding: 0em;
+	padding: 0;
 	display: flex;
 	flex-flow: column;
 	flex: 1 1 auto;
@@ -458,7 +449,7 @@ input {
 
 @media screen and (max-width: 595px){
 	.dropdown-links {
-		width: 105%;
+		width: 100vw;
 	}
 	
 	#footer {
@@ -486,7 +477,6 @@ input {
 	
 	#container {
 		height: 80vh;
-		/*margin-top: 3.75em;*/
 	}
 
 	table.evt5 td:nth-of-type(1) ~ td {
