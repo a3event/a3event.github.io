@@ -99,7 +99,7 @@ ul.ul_b li {
 .dropdown {
 	margin: auto 0.3em;
 	padding: 0;
-	width: 90px;
+	max-width: 120px;
 	height: 22px;
 	display: inline-block;
 }
@@ -110,7 +110,7 @@ ul.ul_b li {
 	border-radius: 5px;
 	left: 0;
 	margin-top: 21px;
-	min-width: 300px;
+	min-width: 380px;
 	overflow: auto;
 	z-index: 3;
 }
@@ -183,6 +183,10 @@ table.evt td {
 
 table.evt1 td {
 	min-width: 100px;
+}
+
+table.evt1 td:first-child {
+	min-width: 40px ;
 }
 
 table.evt2 {
@@ -481,6 +485,10 @@ input {
 	
 	#container {
 		height: 80vh;
+	}
+	
+	.dropdown-links {
+		min-width: 300px;
 	}
 
 	table.evt5 td:nth-of-type(1) ~ td {
