@@ -186,7 +186,7 @@ table.evt1 td {
 }
 
 table.evt1 td:first-child {
-	min-width: 40px ;
+	min-width: 40px;
 }
 
 table.evt2 {
@@ -234,6 +234,15 @@ table.evt5 td:nth-of-type(1) ~ td {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+table.evt6 td:not(:first-child) {
+	min-width: 80px;
+	color: #000;
+}
+
+table.evt6 td:first-child {
+	min-width: 180px;
 }
 
 .ff_overflow {
