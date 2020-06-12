@@ -437,10 +437,15 @@ select {
 	visibility: hidden;
 }
 
-textarea {
-	background-color: #69A;
+div.texta {
+	background-color: #8BD;
+	color: #111;
 	font-family: Arial;
 	width: 80vw;
+	height: 400px;
+	overflow: auto;
+	margin: auto 0.5em;
+	padding: 0.5em;
 }
 
 #footer {
