@@ -245,6 +245,15 @@ table.evt6 td:first-child {
 	min-width: 180px;
 }
 
+table.evt7 {
+	table-layout: fixed;
+	box-sizing: border-box;
+}
+
+table.evt7 td {
+	min-width: 75px;
+}
+
 .ff_overflow {
 	overflow: auto;
 }
@@ -437,17 +446,6 @@ select {
 	visibility: hidden;
 }
 
-div.texta {
-	background-color: #8BD;
-	color: #111;
-	font-family: Arial;
-	width: 80vw;
-	height: 400px;
-	overflow: auto;
-	margin: auto 0.5em;
-	padding: 0.5em;
-}
-
 #footer {
 	padding: 0.2em;
 	position: fixed;
@@ -459,6 +457,16 @@ div.texta {
 #smalltext {
 	float: right;
 	font-size: 0.7em;
+}
+
+div.texta {
+	background-color: #8BD;
+	color: #111;
+	font-family: Arial;
+	width: 80vw;
+	height: 400px;
+	margin: auto 0.5em;
+	padding: 0.5em;
 }
 
 ul.inl {
